@@ -1,3 +1,3 @@
-# PracticaRepositorio
+# Practica creacion de un repositorio
 Practicando la generación de un repositorio.
-FredyS
+[Mas informacion](https://github.com/fredysanchez/PracticaRepositorio)
