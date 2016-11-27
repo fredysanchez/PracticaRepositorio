@@ -1,0 +1,57 @@
+create database FacturacionBDD
+
+
+CREATE TABLE CLIENTES (
+codCLi char(3) PRIMARY KEY,
+nombreCli varchar(100),
+apellidoCli varchar(100),
+telefCli char(9)
+)
+
+drop table FACTURAS 
+
+CREATE TABLE FACTURAS (
+nroFact char(3) PRIMARY KEY,
+valorFact money default 0,
+fechaFact date,
+codCLi char(3),
+FOREIGN KEY(codCLi) REFERENCES CLIENTES (codCLi)
+)
+
+
+CREATE TABLE PRODUCTOS (
+codProd char(3) PRIMARY KEY,
+nombreProd varchar(100),
+unidades varchar(50),
+cantidadStock dec(8,2),
+precioUnitarioActual money
+)
+
+drop table Detalles
+delete from detalles
+
+CREATE TABLE DETALLES (
+nroFact char(3) not null,
+codProd char(3) not null,
+cantidadComprada dec(8,2),
+precioUnitario money,
+FOREIGN KEY(nroFact) REFERENCES FACTURAS (nroFact)
+)
+
+ALTER TABLE DETALLES ADD PRIMARY KEY(nroFact,codProd)
+ALTER TABLE DETALLES ADD FOREIGN KEY(codProd) REFERENCES PRODUCTOS (codProd)
+
+
+insert into CLIENTES values('C01','Jose','Ayala','092345678')
+insert into CLIENTES values('C02','Maria','Paredes','062456789')
+insert into CLIENTES values('C03','Marta','Ortega',null)
+
+insert into FACTURAS values('001',default,'2011-03-23','C01')
+insert into FACTURAS values('002',default,'2011-03-24','C01')
+insert into FACTURAS values('003',default,'2011-03-23','C02')
+insert into FACTURAS values('004',default,'2011-03-25','C02')
+
+insert into PRODUCTOS values('P01','Arroz','libra',300,0.90)
+insert into PRODUCTOS values('P02','Azucar','libra',100,1.20)
+insert into PRODUCTOS values('P03','Aceite','litro',50,2.80)
+insert into PRODUCTOS values('P04','Atún','lata de 500 gramos',300,1.20)

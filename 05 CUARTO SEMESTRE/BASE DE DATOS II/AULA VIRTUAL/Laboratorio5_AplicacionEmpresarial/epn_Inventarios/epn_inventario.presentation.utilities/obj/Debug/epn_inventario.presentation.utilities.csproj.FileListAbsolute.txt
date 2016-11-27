@@ -1,0 +1,24 @@
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.pdb
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.pdb
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\Newtonsoft.Json.xml
+C:\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.csprojResolveAssemblyReference.cache
+C:\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\utilities.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\utilities.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\Newtonsoft.Json.xml
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.csprojResolveAssemblyReference.cache
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.pdb

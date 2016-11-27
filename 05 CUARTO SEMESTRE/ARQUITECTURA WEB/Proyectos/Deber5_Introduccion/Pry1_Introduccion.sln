@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Desktop1", "..\..\Desktop1\", "{DD12098B-5023-4F3B-BC41-B79C42501363}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Desktop1"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Desktop1\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Desktop1"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Desktop1\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57086"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Desktop", "..\Proyectos\Desktop\", "{696AC3BC-38A9-4EFB-9C8B-F0922CFBCF29}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Desktop"
+		Debug.AspNetCompiler.PhysicalPath = "..\Proyectos\Desktop\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Desktop\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Desktop"
+		Release.AspNetCompiler.PhysicalPath = "..\Proyectos\Desktop\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Desktop\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51794"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nueva carpeta", ".", "{BC5BE24E-B07D-441B-B0BE-92EB8463ADBA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Nueva carpeta"
+		Debug.AspNetCompiler.PhysicalPath = "..\Nueva carpeta\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Nueva carpeta\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Nueva carpeta"
+		Release.AspNetCompiler.PhysicalPath = "..\Nueva carpeta\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Nueva carpeta\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60196"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD12098B-5023-4F3B-BC41-B79C42501363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD12098B-5023-4F3B-BC41-B79C42501363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696AC3BC-38A9-4EFB-9C8B-F0922CFBCF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696AC3BC-38A9-4EFB-9C8B-F0922CFBCF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5BE24E-B07D-441B-B0BE-92EB8463ADBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5BE24E-B07D-441B-B0BE-92EB8463ADBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

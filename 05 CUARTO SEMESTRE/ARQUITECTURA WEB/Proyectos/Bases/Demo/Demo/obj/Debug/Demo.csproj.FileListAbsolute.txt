@@ -1,0 +1,20 @@
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Demo\Demo\bin\Demo.dll
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Demo\Demo\bin\Demo.pdb
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Demo\Demo\obj\Debug\Demo.dll
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Demo\Demo\obj\Debug\Demo.pdb
+G:\ \.Trashes\Demo\Demo\bin\Demo.dll
+G:\ \.Trashes\Demo\Demo\bin\Demo.pdb
+G:\ \.Trashes\Demo\Demo\obj\Debug\Demo.dll
+G:\ \.Trashes\Demo\Demo\obj\Debug\Demo.pdb
+F:\ \.Trashes\Demo\Demo\bin\Demo.dll
+F:\ \.Trashes\Demo\Demo\bin\Demo.pdb
+F:\ \.Trashes\Demo\Demo\obj\Debug\Demo.dll
+F:\ \.Trashes\Demo\Demo\obj\Debug\Demo.pdb
+D:\ \.Trashes\Demo\Demo\bin\Demo.dll
+D:\ \.Trashes\Demo\Demo\bin\Demo.pdb
+D:\ \.Trashes\Demo\Demo\obj\Debug\Demo.dll
+D:\ \.Trashes\Demo\Demo\obj\Debug\Demo.pdb
+G:\ARQUITECTURA WEB\Proyectos\Bases\Demo\Demo\bin\Demo.dll
+G:\ARQUITECTURA WEB\Proyectos\Bases\Demo\Demo\bin\Demo.pdb
+G:\ARQUITECTURA WEB\Proyectos\Bases\Demo\Demo\obj\Debug\Demo.dll
+G:\ARQUITECTURA WEB\Proyectos\Bases\Demo\Demo\obj\Debug\Demo.pdb

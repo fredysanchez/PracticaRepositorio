@@ -1,0 +1,21 @@
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\presentation.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\presentation.utilities.pdb
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\sgdp.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\sgdp.utilities.pdb
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\Newtonsoft.Json.xml
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.pdb
+E:\proyectos\presentation.utilities\bin\Debug\presentation.utilities.dll
+E:\proyectos\presentation.utilities\bin\Debug\presentation.utilities.pdb
+E:\proyectos\presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+E:\proyectos\presentation.utilities\bin\Debug\utilities.dll
+E:\proyectos\presentation.utilities\bin\Debug\utilities.pdb
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.dll
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\presentation.utilities\obj\Debug\presentation.utilities.pdb

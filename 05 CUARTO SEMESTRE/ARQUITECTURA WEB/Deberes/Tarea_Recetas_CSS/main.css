@@ -1,0 +1,149 @@
+            /*Eliminar el formato de toda la pagina*/
+            html,body,h1,h2,h3,p,ul,ol,li,a{
+                padding:0;
+                margin:0;
+                border:0;
+            }
+            
+            body{
+                padding:30px 30px 30px 30px;
+                background-image: url("http://i1233.photobucket.com/albums/ff397/Capaspi/fondos-de-pantalla-atardecer-oceano.jpg");
+	            background-size: cover;
+            }
+            
+            h1{
+                color: blue;
+                font-size: 48px;
+                margin:10px 0 15px 0;
+                text-align:center;
+            }
+            
+            h2 {
+                color:rosybrown;
+                padding:6px 3px 0 0;
+                border-bottom:2px solid #1E90FF;
+                margin:20px 0 20px 0;
+                font-size: 40px;
+                text-align:center;
+                border-bottom:2px solid #1E90FF;
+                font-family: verdana;
+            }
+            
+            h3 {
+                color: brown;
+                font-size: 20px;
+                padding: 6px 3px 0px 0px;
+                border-bottom:2px solid gray;
+                font-family: cursive;
+
+            }
+            
+            p{
+                color: #8FBC8F;
+                font-size: 24px;
+                text-decoration: none;
+                padding:28px 
+            }
+            
+            ol li:first-child {
+                color: #778899;
+            }
+            
+            ol{
+                font-size:24px;
+                padding:0 0 0 50px;
+            }
+            
+            ul{
+                font-size:24;
+                padding:0 0 0 50px;
+            }
+            
+            ul li{
+                font-size: 24px;
+                padding: 0 10px 0 0;
+            }
+
+            .nav{
+                padding-left:0;
+                text-align:center;
+            }
+            
+            .nav li{
+                display:inline;
+                
+            }
+            
+            .nav a{
+                text-decoration: none;
+                color: #0000AF;
+            }
+            
+            .recetas{
+                
+                list-style-type:none;
+                padding:0;
+                text-align:center;
+            }
+            
+            .recetas li{
+                font-size:30px;
+                border:1px solid #808080;
+                padding-left:15px;
+                text-align:center;
+            }
+            
+            .recetas a{
+                color:#90EE90;
+            }
+            
+            .recetas h3{
+                border-bottom:0;
+            }
+            
+            .header {
+                padding:10px 10px 10px 10px;
+                background-color:lightcyan;
+                text-align:center;
+                color:silver;
+            }
+            
+            .header a{
+                color:coral;
+                font-family:COMic Sans MS;
+            }
+            
+            .main_cont{
+                width: 1000px;
+                padding: 20px 20px 20px 20px;
+                border: 1px solid #DDDDDD;
+                margin: 30px auto 0 auto;
+                background-image: url("http://bestlivewallpaper.com/wp-content/uploads/screenshots/com.xllusion.livewallpaper.mood/icon.png");
+                background-size: cover;
+                    
+            }
+            
+            .imagen {
+                display: inline;
+                list-style-type: none;
+                padding: 15px;
+                width:240px;
+                height:240px;
+                margin: 12px;
+            }
+
+            .imagen li {
+                display: inline;
+            }
+.imagen-de{
+    width: 400px;
+    height: 246px;
+    background:#ffffff url("http://cdn.kiwilimon.com/recetaimagen/16308/thumb400x300-8250.jpg") top left ;
+    margin: 0 auto 0 auto;
+    
+        
+}
+.recetas img{
+    float: left;
+    padding-right: 20px;
+    }

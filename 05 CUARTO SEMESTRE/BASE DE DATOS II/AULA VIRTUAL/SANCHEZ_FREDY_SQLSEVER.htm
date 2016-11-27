@@ -1,0 +1,1413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<title>Curso SQL Básico</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body>
+<h1 align="center"><strong><font size="+3">CURSO SQL PARA PRINCIPIANTES</font></strong></h1>
+<h2><a href="#"></a><a href="#Introduccion">Introducción</a></h2>
+<h2><a href="#ConsultasSeleccion">Consultas de selección</a></h2>
+<h2><a href="#CriteriosSeleccion">Criterios de selección</a></h2>
+<h2><a href="#Agrupamiento">Agrupamiento de registros y funciones agregadas</a></h2>
+<h2><a href="#ConsultasAccion">Consultas de Acción</a></h2>
+<h2><a href="#TiposDatos">Tipos de datos</a></h2>
+<h2><a href="#SubConsultas">Sub Consultas</a></h2>
+<h2><a href="#ConsultasUnion">Consultas de unión internas</a></h2>
+<h2><a href="#ConsultasUnionExternas">Consultas de unión externas</a></h2>
+<h2><a href="#Estructuras">Estructuras de tablas</a></h2>
+<h2><a name="Introduccion"></a><strong><font size="+3">Introducción</font></strong></h2>
+<h3><font size="+2">Semblanza histórica</font></h3>
+<p align="justify">La historia de SQL empieza en 1974 con la definición, 
+  por parte de <a href="http://domino.research.ibm.com/comm/pr.nsf/pages/bio.chamberlin.html" target="_blank">Donald 
+  Chamberlin</a> y de otras personas que trabajaban en los laboratorios de investigación 
+  de IBM, de un lenguaje para la especificación de las características 
+  de las bases de datos que adoptaban el modelo relacional. Este lenguaje se llamaba 
+  SEQUEL (Structured English Query Language) y se implementó en un prototipo 
+  llamado SEQUEL-XRM entre 1974 y 1975. Las experimentaciones con ese prototipo 
+  condujeron, entre 1976 y 1977, a una revisión del lenguaje (SEQUEL/2), 
+  que a partir de ese momento cambió de nombre por motivos legales, convirtiéndose 
+  en SQL. El prototipo (System R), basado en este lenguaje, se adoptó y 
+  utilizó internamente en IBM y lo adoptaron algunos de sus clientes elegidos. 
+  Gracias al éxito de este sistema, que no estaba todavía comercializado, 
+  también otras compañías empezaron a desarrollar sus productos 
+  relacionales basados en SQL. A partir de 1981, IBM comenzó a entregar 
+  sus productos relacionales y en 1983 empezó a vender DB2. En el curso 
+  de los años ochenta, numerosas compañías (por ejemplo Oracle 
+  y Sybase, sólo por citar algunos) comercializaron productos basados en 
+  SQL, que se convierte en el estándar industrial de hecho por lo que respecta 
+  a las bases de datos relacionales.<br>
+  En 1986, el ANSI adoptó SQL (sustancialmente adoptó el dialecto 
+  SQL de IBM) como estándar para los lenguajes relacionales y en 1987 se 
+  transfomó en estándar ISO. Esta versión del estándar 
+  va con el nombre de SQL/86. En los años siguientes, éste ha sufrido 
+  diversas revisiones que han conducido primero a la versión SQL/89 y, 
+  posteriormente, a la actual SQL/92.<br>
+</p>
+<h3 align="left"><font size="+2">Componentes de SQL</font></h3>
+<p align="left">El lenguaje SQL está compuesto por comandos, cláusulas, 
+  operadores y funciones de agregado. Estos elementos se combinan en las instrucciones 
+  para crear, actualizar y manipular las bases de datos. </p>
+<h4 align="left"><font size="+1">Comandos</font></h4>
+<p align="left"> Existen dos tipos de comandos SQL: </p>
+<ul>
+  <li> DDL que permiten crear y definir nuevas bases de datos, campos e índices. 
+  </li>
+  <li> DML que permiten generar consultas para ordenar, filtrar y extraer datos 
+    de la base de datos.<br>
+  </li>
+</ul>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr> 
+    <td colspan="2"><div align="center"><strong>Comandos DDL</strong></div></td>
+  </tr>
+  <tr> 
+    <td width="16%">Comando</td>
+    <td width="84%">Descripción</td>
+  </tr>
+  <tr> 
+    <td>CREATE</td>
+    <td>Utilizado para crear nuevas tablas, campos e índices.</td>
+  </tr>
+  <tr> 
+    <td>DROP</td>
+    <td>Empleado para eliminar tablas e índices.</td>
+  </tr>
+  <tr> 
+    <td>ALTER</td>
+    <td>Utilizado para modificar las tablas agregando campos o cambiando la definición 
+      de los campos.</td>
+  </tr>
+  <tr> 
+    <td colspan="2"><div align="center"><strong>Comandos DML</strong></div></td>
+  </tr>
+  <tr> 
+    <td>Comando</td>
+    <td>Descripción</td>
+  </tr>
+  <tr> 
+    <td>SELECT</td>
+    <td>Utilizado para consultar registros de la base de datos que satisfagan 
+      un criterio determinado.</td>
+  </tr>
+  <tr>
+    <td>INSERT</td>
+    <td>Utilizado para cargar lotes de datos en la base de datos en una única 
+      operación.</td>
+  </tr>
+  <tr> 
+    <td>UPDATE</td>
+    <td>Utilizado para modificar los valores de los campos y registros especificados.</td>
+  </tr>
+  <tr> 
+    <td>DELETE</td>
+    <td>Utilizado para eliminar registros de una tabla de una base de datos.</td>
+  </tr>
+</tbody></table>
+<p>&nbsp;</p>
+<h4 align="left"><font size="+1">Cláusulas</font></h4>
+<p align="left">Las cláusulas son condiciones de modificación utilizadas 
+  para definir los datos que desea seleccionar o manipular.</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td width="16%"><strong>Cláusula</strong></td>
+    <td width="84%"><p><strong>Descripción</strong></p></td>
+  </tr>
+  <tr>
+    <td>FROM</td>
+    <td>Utilizada para especificar la tabla de la cual se van a seleccionar los 
+      registros.</td>
+  </tr>
+  <tr>
+    <td>WHERE</td>
+    <td>Utilizada para especificar las condiciones que deben reunir los registros 
+      que se van a seleccionar.</td>
+  </tr>
+  <tr>
+    <td>GROUP BY</td>
+    <td>Utilizada para separar los registros seleccionados en grupos específicos.</td>
+  </tr>
+  <tr>
+    <td>HAVING</td>
+    <td>Utilizada para expresar la condición que debe satisfacer cada grupo.</td>
+  </tr>
+  <tr>
+    <td>ORDER BY</td>
+    <td>Utilizada para ordenar los registros seleccionados de acuerdo con un orden 
+      específico.</td>
+  </tr>
+</tbody></table>
+<h4 align="left"><font size="+1">Operadores lógicos</font></h4>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td width="16%"><strong>Operador</strong></td>
+    <td width="84%"><strong>Uso</strong></td>
+  </tr>
+  <tr>
+    <td>AND</td>
+    <td>Es el "y" lógico. Evalúa dos condiciones y devuelve 
+      un valor de verdad sólo si ambas son ciertas.</td>
+  </tr>
+  <tr>
+    <td>OR</td>
+    <td>Es el "o" lógico. Evalúa dos condiciones y devuelve 
+      un valor de verdad si alguna de las dos es cierta.</td>
+  </tr>
+  <tr>
+    <td>NOT</td>
+    <td>Negación lógica. Devuelve el valor contrario de la expresión.</td>
+  </tr>
+</tbody></table>
+<h4 align="left"><font size="+1">Operadores de comparación</font></h4>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td width="16%"><strong>Operador</strong></td>
+    <td width="84%"><strong>Uso</strong></td>
+  </tr>
+  <tr>
+    <td>&lt;</td>
+    <td>Menor que</td>
+  </tr>
+  <tr> 
+    <td>&gt;</td>
+    <td>Mayor que</td>
+  </tr>
+  <tr>
+    <td>&lt;&gt;</td>
+    <td>Distindo de</td>
+  </tr>
+  <tr>
+    <td>&lt;=</td>
+    <td>Menor o igual</td>
+  </tr>
+  <tr>
+    <td>&gt;=</td>
+    <td>Mayor o igual</td>
+  </tr>
+  <tr>
+    <td>=</td>
+    <td>igual que</td>
+  </tr>
+  <tr>
+    <td>BETWEEN</td>
+    <td>Utilizado para especificar un intervalo de valores.</td>
+  </tr>
+  <tr>
+    <td>LIKE</td>
+    <td>Utilizado en la comparación de un modelo.</td>
+  </tr>
+  <tr>
+    <td>IN</td>
+    <td>Utilizado para especificar registros de una base de datos.</td>
+  </tr>
+</tbody></table>
+<h4 align="left"><font size="+1">Funciones de cálculo o agregado</font></h4>
+<p align="left">Las funciones de agregado se usan dentro de una cláusula 
+  SELECT en grupos de registros para devolver un único valor que se aplica 
+  a un grupo de registros.</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td width="16%"><strong>Función</strong></td>
+    <td width="84%"><strong>Descripción</strong></td>
+  </tr>
+  <tr>
+    <td>AVG</td>
+    <td>Utilizada para calcular el promedio de los valores de un campo determinado.</td>
+  </tr>
+  <tr>
+    <td>COUNT</td>
+    <td>Utilizada para devolver el número de registros de la selección.</td>
+  </tr>
+  <tr>
+    <td>SUM</td>
+    <td>Utilizada para devolver la suma de todos los valores de un campo determinado.</td>
+  </tr>
+  <tr>
+    <td>MAX</td>
+    <td>Utilizada para devolver el valor más alto de un campo especificado.</td>
+  </tr>
+  <tr>
+    <td>MIN</td>
+    <td>Utilizada para devolver el valor más bajo de un campo especificado.</td>
+  </tr>
+</tbody></table>
+<h2><a name="ConsultasSeleccion"></a>Consultas de selección</h2>
+<h3>Consultas básicas.</h3>
+<p align="justify">Las consultas de selección se utilizan para indicar 
+  al motor de datos que devuelva información de las bases de datos, esta 
+  información es devuelta en forma de conjunto de registros que se pueden 
+  almacenar en un objeto recordset. Este conjunto de registros puede ser modificable.</p>
+<p> La sintaxis básica de una consulta de selección es la siguiente:</p>
+<p> SELECT Campos FROM Tabla</p>
+<p> En donde campos es la lista de campos que se deseen recuperar y tabla es el 
+  origen de los mismos, por ejemplo:</p>
+<p>SELECT Nombre, Teléfono FROM Clientes</p>
+<p> Devolver Literales<br>
+  En determinadas ocasiones nos puede interesar incluir una columna con un texto 
+  fijo en una consulta de selección, por ejemplo, supongamos que tenemos 
+  una tabla de empleados y deseamos recuperar las tarifas semanales de los electricistas, 
+  podríamos realizar la siguiente consulta:</p>
+<p align="left">SELECT Empleados.Nombre, 'Tarifa semanal: ', Empleados.TarifaHora 
+  * 40 FROM Empleados WHERE Empleados.Cargo = 'Electricista' <br>
+</p>
+<h3>Usando alias de campos.</h3>
+<p align="justify">En determinadas circunstancias es necesario asignar un nombre 
+  a alguna columna determinada de un conjunto devuelto, otras veces por presentación 
+  o porque estamos recuperando datos de diferentes tablas y resultan tener un 
+  campo con igual nombre. Para resolver todas ellas tenemos la palabra reservada 
+  AS que se encarga de asignar el nombre que deseamos a la columna deseada.</p>
+<p align="justify"> SELECT Apellido AS Empleado FROM Empleados </p>
+<p align="justify">También podemos asignar alias a las tablas dentro de 
+  la consulta de selección, en esta caso hay que tener en cuenta que en 
+  todas las referencias que deseemos hacer a dicha tabla se ha de utilizar el 
+  alias en lugar del nombre. Esta técnica será de gran utilidad 
+  más adelante cuando se estudien las vinculaciones entre tablas. Por ejemplo:</p>
+<p align="justify">SELECT Apellido AS Empleado FROM Empleados AS Trabajadores 
+  <br>
+  SELECT Trabajadores.Apellido AS Empleado FROM Empleados Trabajadores </p>
+<p align="justify">Esta nomenclatura [Tabla].[Campo] se debe utilizar cuando se 
+  está recuperando un campo cuyo nombre se repite en varias de las tablas 
+  que se utilizan en la sentencia. No obstante cuando en la sentencia se emplean 
+  varias tablas es aconsejable utilizar esta nomenclatura para evitar el trabajo 
+  que supone al motor de datos averiguar en que tabla está cada uno de 
+  los campos indicados en la cláusua SELECT.<br>
+</p>
+<h3 align="justify"> Ordenar los registros.</h3>
+<p align="justify">Adicionalmente se puede especificar el orden en que se desean 
+  recuperar los registros de las tablas mediante la cláusula ORDER BY. 
+  Ejemplo:</p>
+<p align="justify"> SELECT CodigoPostal, Nombre, Telefono FROM Clientes ORDER 
+  BY Nombre </p>
+<p align="justify">Esta consulta devuelve los campos CodigoPostal, Nombre, Telefono 
+  de la tabla Clientes ordenados por el campo Nombre.<br>
+  Se pueden ordenar los registros por mas de un campo, como por ejemplo: </p>
+<p align="justify">SELECT CodigoPostal, Nombre, Telefono FROM Clientes ORDER BY 
+  CodigoPostal, Nombre</p>
+<p align="justify">Incluso se puede especificar el orden de los registros: ascendente 
+  mediante la cláusula (ASC - se toma este valor por defecto) ó 
+  descendente (DESC) </p>
+<p align="justify">SELECT CodigoPostal, Nombre, Telefono FROM Clientes ORDER BY 
+  CodigoPostal DESC , Nombre ASC </p>
+<h3>Uso de índices de las tablas.</h3>
+<p>Si deseamos que la sentecia SQL utilice un índice para mostrar los resultados 
+  se puede utilizar la palabra reservada INDEX de la siguiente forma:</p>
+<p>SELECT ... FROM Tabla (INDEX=Indice) ... </p>
+<p>Normalmente los motores de las bases de datos deciden que indice se debe utilizar 
+  para la consulta, para ello utilizan criterios de rendimiento y sobre todo los 
+  campos de búsqueda especificados en la cláusula WHERE. Si se desea 
+  forzar a no utilizar ningún índice utilizaremos la siguiente sintaxis:<br>
+</p>
+<p>SELECT ... FROM Tabla (INDEX=0) ...<br>
+</p>
+<h3> Consultas con predicados.</h3>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td width="16%"><strong>Predicado</strong></td>
+    <td width="84%"><strong>Descripción</strong></td>
+  </tr>
+  <tr>
+    <td> * (ALL)</td>
+    <td>Devuelve todos los campos de la tabla.</td>
+  </tr>
+  <tr>
+    <td>TOP</td>
+    <td>Devuelve un determinado número de registros de la tabla.</td>
+  </tr>
+  <tr>
+    <td>DISTINCT</td>
+    <td>Omite los registros cuyos campos seleccionados coincidan totalmente.</td>
+  </tr>
+</tbody></table>
+<p>* (ALL )</p>
+<p>Si no se incluye ninguno de los predicados se asume ALL. El Motor de base de 
+  datos selecciona todos los registros que cumplen las condiciones de la instrucción 
+  SQL y devuelve todos y cada uno de sus campos. No es conveniente abusar de este 
+  predicado ya que obligamos al motor de la base de datos a analizar la estructura 
+  de la tabla para averiguar los campos que contiene, es mucho más rápido 
+  indicar el listado de campos deseados.<br>
+</p>
+<p>TOP</p>
+<p>Devuelve un cierto número de registros que entran entre al principio 
+  o al final de un rango especificado por una cláusula ORDER BY. Supongamos 
+  que queremos recuperar los nombres de los 25 primeros estudiantes del curso:<br>
+</p>
+<p>SELECT TOP 25 Nombre, Apellido FROM Estudiantes ORDER BY Nota DESC </p>
+<p><br>
+  Si no se incluye la cláusula ORDER BY, la consulta devolverá un 
+  conjunto arbitrario de 25 registros de la tabla de Estudiantes. El predicado 
+  TOP no elige entre valores iguales. En el ejemplo anterior, si la nota media 
+  número 25 y la 26 son iguales, la consulta devolverá 26 registros. 
+  Se puede utilizar la palabra reservada PERCENT para devolver un cierto porcentaje 
+  de registros que caen al principio o al final de un rango especificado por la 
+  cláusula ORDER BY. Supongamos que en lugar de los 25 primeros estudiantes 
+  deseamos el 10 por ciento del curso: </p>
+<p>SELECT TOP 10 PERCENT Nombre, Apellido FROM Estudiantes ORDER BY Nota DESC</p>
+<p>El valor que va a continuación de TOP debe ser un entero sin signo.</p>
+<p>DISTINCT</p>
+<p>Omite los registros que contienen datos duplicados en los campos seleccionados. 
+  Para que los valores de cada campo listado en la instrucción SELECT se 
+  incluyan en la consulta deben ser únicos. Por ejemplo, varios empleados 
+  listados en la tabla Empleados pueden tener el mismo apellido. Si dos registros 
+  contienen López en el campo Apellido, la siguiente instrucción 
+  SQL devuelve un único registro: </p>
+<p> SELECT DISTINCT Apellido FROM Empleados </p>
+<p> Con otras palabras el predicado DISTINCT devuelve aquellos registros cuyos 
+  campos indicados en la cláusula SELECT posean un contenido diferente. 
+  El resultado de una consulta que utiliza DISTINCT no es actualizable y no refleja 
+  los cambios subsiguientes realizados por otros usuarios. </p>
+<h2><a name="CriteriosSeleccion"></a>Criterios de selección</h2>
+<h3>Operadores lógicos</h3>
+<p>Los operadores lógicos soportados por SQL son: AND, OR, NOT.</p>
+<p>A excepción del último poseen la siguiente sintaxis:<br>
+  &lt;expresión1&gt; operador &lt;expresión2&gt; </p>
+<p> En donde expresión1 y expresión2 son las condiciones a evaluar, 
+  el resultado de la operación varía en función del operador 
+  lógico. La tabla adjunta muestra los diferentes posibles resultados:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr> 
+    <td>&lt;expresión1&gt; </td>
+    <td>Operador</td>
+    <td>&lt;expresión2&gt;</td>
+    <td>Resultado</td>
+  </tr>
+  <tr> 
+    <td>Verdad</td>
+    <td>AND</td>
+    <td>Falso</td>
+    <td>Falso</td>
+  </tr>
+  <tr> 
+    <td>Verdad</td>
+    <td>AND</td>
+    <td>Verdad</td>
+    <td>Verdad</td>
+  </tr>
+  <tr> 
+    <td>Falso</td>
+    <td>AND</td>
+    <td>Verdad</td>
+    <td>Falso</td>
+  </tr>
+  <tr> 
+    <td>Falso</td>
+    <td>AND</td>
+    <td>Falso</td>
+    <td>Falso</td>
+  </tr>
+  <tr> 
+    <td>Verdad</td>
+    <td>OR</td>
+    <td>Falso</td>
+    <td>Verdad</td>
+  </tr>
+  <tr> 
+    <td>Verdad</td>
+    <td>OR</td>
+    <td>Verdad</td>
+    <td>Verdad</td>
+  </tr>
+  <tr> 
+    <td>Falso</td>
+    <td>OR</td>
+    <td>Verdad</td>
+    <td>Verdad</td>
+  </tr>
+  <tr> 
+    <td>Falso</td>
+    <td>OR</td>
+    <td>Falso</td>
+    <td>Falso</td>
+  </tr>
+</tbody></table>
+<p>Si a cualquiera de las anteriores condiciones le anteponemos el operador NOT 
+  el resultado de la operación será el contrario al devuelto.</p>
+<p>SELECT * FROM Empleados WHERE (Edad &gt; 25) AND (Edad &lt; 50)<br>
+  SELECT * FROM Empleados WHERE (Edad &gt; 25 AND Edad &lt; 50) OR Sueldo = 100 
+  <br>
+  SELECT * FROM Empleados WHERE NOT Estado = 'Soltero' <br>
+  SELECT * FROM Empleados WHERE (Sueldo &gt; 100 AND Sueldo &lt; 500) OR (Provincia 
+  = 'Madrid' AND Estado = 'Casado') </p>
+<h3> Intervalos de valores</h3>
+<p>Para indicar que deseamos recuperar los registros según el intervalo 
+  de valores de un campo emplearemos el operador BETWEEN cuya sintaxis es:</p>
+<p>campo [Not] Between valor1 And valor2 </p>
+<p>En este caso la consulta devolvería los registros que contengan en "campo" 
+  un valor incluido en el intervalo valor1, valor2 (ambos inclusive). Si anteponemos 
+  la condición Not devolverá aquellos valores no incluidos en el 
+  intervalo. </p>
+<p>SELECT * FROM Pedidos WHERE CodPostal BETWEEN 28000 And 28999</p>
+<h3> El Operador Like</h3>
+<p> Se utiliza para comparar una expresión de cadena con un modelo en una 
+  expresión SQL. Su sintaxis es: </p>
+<p>expresión LIKE modelo </p>
+<p align="justify"> En donde expresión es una cadena modelo o campo contra 
+  el que se compara expresión. Se puede utilizar el operador Like para 
+  encontrar valores en los campos que coincidan con el modelo especificado. Por 
+  modelo puede especificar un valor completo (Ana María), o se puede utilizar 
+  una cadena de caracteres comodín encontrar un rango de valores (LIKE 
+  An%).</p>
+<p align="justify"> <br>
+  El operador Like se puede utilizar en una expresión para comparar un 
+  valor de un campo con una expresión de cadena. Por ejemplo, si introduce 
+  Like C% en una consulta SQL, la consulta devuelve todos los valores de campo 
+  que comiencen por la letra C. En una consulta con parámetros, puede hacer 
+  que el usuario escriba el modelo que se va a utilizar. <br>
+  El ejemplo siguiente devuelve los datos que comienzan con la letra P seguido 
+  de cualquier letra entre A y F :</p>
+<p align="justify">Like 'P[A-F]%'</p>
+<p align="justify">Este ejemplo devuelve los campos cuyo contenido empiece con 
+  una letra de la A a la D seguidas de cualquier cadena. </p>
+<p align="justify">Like '[A-D]%' </p>
+<h3 align="justify">El Operador IN</h3>
+<p align="justify">Este operador devuelve aquellos registros cuyo campo indicado 
+  coincide con alguno de los en una lista. Su sintaxis es: </p>
+<p align="justify">expresión [Not] In(valor1, valor2, . . .) </p>
+<p align="justify">SELECT * FROM Pedidos WHERE Provincia In ('Madrid', 'Barcelona', 
+  'Sevilla') </p>
+<h3 align="justify">La cláusula WHERE </h3>
+<p align="justify">La cláusula WHERE puede usarse para determinar qué 
+  registros de las tablas enumeradas en la cláusula FROM aparecerán 
+  en los resultados de la instrucción SELECT. Después de escribir 
+  esta cláusula se deben especificar las condiciones expuestas en los apartados 
+  anteriores. Si no se emplea esta cláusula, la consulta devolverá 
+  todas las filas de la tabla. WHERE es opcional, pero cuando aparece debe ir 
+  a continuación de FROM. </p>
+<p align="justify">SELECT Apellidos, Salario FROM Empleados WHERE Salario = 21000 
+  <br>
+  SELECT IdProducto, Existencias FROM Productos WHERE Existencias &lt;= NuevoPedido 
+  <br>
+  SELECT * FROM Pedidos WHERE FechaEnvio = '05-30-1994'<br>
+  SELECT Apellidos, Nombre FROM Empleados WHERE Apellidos = 'King' <br>
+  SELECT Apellidos, Nombre FROM Empleados WHERE Apellidos Like 'S%' <br>
+  SELECT Apellidos, Salario FROM Empleados WHERE Salario Between 200 And 300 <br>
+  SELECT Apellidos, Salario FROM Empleados WHERE Apellidos Between 'Lon' And 'Tol' 
+  <br>
+  SELECT IdPedido, FechaPedido FROM Pedidos WHERE FechaPedido Between '01-01-1994' 
+  And '12-31-1994'<br>
+</p>
+<h2><a name="Agrupamiento"></a>Agrupamiento de registros y funciones agregadas</h2>
+<h3>La cláusula GROUP BY</h3>
+<p align="justify">Combina los registros con valores idénticos, en la lista 
+  de campos especificados, en un único registro. Para cada registro se 
+  crea un valor sumario si se incluye una función SQL agregada, como por 
+  ejemplo Sum o Count, en la instrucción SELECT. Su sintaxis es: </p>
+<p align="justify">SELECT campos FROM tabla WHERE criterio GROUP BY campos del 
+  grupo</p>
+<p align="justify">GROUP BY es opcional. Los valores de resumen se omiten si no 
+  existe una función SQL agregada en la instrucción SELECT. Los 
+  valores Null en los campos GROUP BY se agrupan y no se omiten. No obstante, 
+  los valores Null no se evalúan en ninguna de las funciones SQL agregadas. 
+</p>
+<p align="justify">Se utiliza la cláusula WHERE para excluir aquellas filas 
+  que no desea agrupar, y la cláusula HAVING para filtrar los registros 
+  una vez agrupados. <br>
+  A menos que contenga un dato Memo u Objeto OLE, un campo de la lista de campos 
+  GROUP BY puede referirse a cualquier campo de las tablas que aparecen en la 
+  cláusula FROM, incluso si el campo no esta incluido en la instrucción 
+  SELECT, siempre y cuando la instrucción SELECT incluya al menos una función 
+  SQL agregada.<br>
+  Todos los campos de la lista de campos de SELECT deben o bien incluirse en la 
+  cláusula GROUP BY o como argumentos de una función SQL agregada. 
+</p>
+<p>SELECT IdFamilia, Sum(Stock) AS StockActual FROM Productos GROUP BY IdFamilia 
+</p>
+<p>Una vez que GROUP BY ha combinado los registros, HAVING muestra cualquier registro 
+  agrupado por la cláusula GROUP BY que satisfaga las condiciones de la 
+  cláusula HAVING. <br>
+  HAVING es similar a WHERE, determina qué registros se seleccionan. Una 
+  vez que los registros se han agrupado utilizando GROUP BY, HAVING determina 
+  cuales de ellos se van a mostrar. </p>
+<p>SELECT IdFamilia, Sum(Stock) AS StockActual FROM Productos GROUP BY IdFamilia 
+  HAVING StockActual &gt; 100 AND NombreProducto Like 'BOS%'<br>
+</p>
+<h3>AVG (media aritmética)</h3>
+<p align="justify">Calcula la media aritmética de un conjunto de valores 
+  contenidos en un campo especificado de una consulta. Su sintaxis es la siguiente 
+</p>
+<p align="justify">Avg(expr) </p>
+<p align="justify">En donde expr representa el campo que contiene los datos numéricos 
+  para los que se desea calcular la media o una expresión que realiza un 
+  cálculo utilizando los datos de dicho campo. La media calculada por Avg 
+  es la media aritmética (la suma de los valores dividido por el número 
+  de valores). La función Avg no incluye ningún campo Null en el 
+  cálculo. </p>
+<p>SELECT Avg(Gastos) AS Promedio FROM Pedidos WHERE Gastos &gt; 100 </p>
+<h3>COUNT</h3>
+<p align="justify">Calcula el número de registros devueltos por una consulta. 
+  Su sintaxis es la siguiente:</p>
+<p align="justify">Count(expr) </p>
+<p align="justify">En donde expr contiene el nombre del campo que desea contar. 
+  Los operandos de expr pueden incluir el nombre de un campo de una tabla, una 
+  constante o una función (la cual puede ser intrínseca o definida 
+  por el usuario pero no otras de las funciones agregadas de SQL). Puede contar 
+  cualquier tipo de datos incluso texto. <br>
+  Aunque expr puede realizar un cálculo sobre un campo, Count simplemente 
+  cuenta el número de registros sin tener en cuenta qué valores 
+  se almacenan en los registros. La función Count no cuenta los registros 
+  que tienen campos null a menos que expr sea el carácter comodín 
+  (*). Si utiliza un comodín, Count calcula el número total de registros, 
+  incluyendo aquellos que contienen campos null. Count(*) es considerablemente 
+  más rápida que Count(Campo). No se debe poner el asterisco entre 
+  dobles comillas ('*'). </p>
+<p>SELECT Count(*) AS Total FROM Pedidos </p>
+<p>Si expr identifica a múltiples campos, la función Count cuenta 
+  un registro sólo si al menos uno de los campos no es Null. Si todos los 
+  campos especificados son Null, no se cuenta el registro. Hay que separar los 
+  nombres de los campos con ampersand (&amp;). </p>
+<p>SELECT Count(FechaEnvío &amp; Transporte) AS Total FROM Pedidos </p>
+<p>Podemos hacer que el gestor cuente los datos diferentes de un determinado campo</p>
+<p>SELECT Count(DISTINCT Localidad) AS Total FROM Pedidos </p>
+<h3>MAX Y MIN</h3>
+<p>Devuelven el mínimo o el máximo de un conjunto de valores contenidos 
+  en un campo especifico de una consulta. Su sintaxis es: </p>
+<p>Min(expr) <br>
+  Max(expr) </p>
+<p>En donde expr es el campo sobre el que se desea realizar el cálculo. 
+  Expr pueden incluir el nombre de un campo de una tabla, una constante o una 
+  función (la cual puede ser intrínseca o definida por el usuario 
+  pero no otras de las funciones agregadas de SQL).</p>
+<p>SELECT Min(Gastos) AS ElMin FROM Pedidos WHERE Pais = 'España' </p>
+<p>SELECT Max(Gastos) AS ElMax FROM Pedidos WHERE Pais = 'España' </p>
+<h3>STDEV, STDEVP</h3>
+<p align="justify">Devuelve estimaciones de la desviación estándar 
+  para la población (el total de los registros de la tabla) o una muestra 
+  de la población representada (muestra aleatoria). Su sintaxis es: </p>
+<p>StDev(expr)<br>
+  StDevP(expr)</p>
+<p align="justify">En donde expr representa el nombre del campo que contiene los 
+  datos que desean evaluarse o una expresión que realiza un cálculo 
+  utilizando los datos de dichos campos. Los operandos de expr pueden incluir 
+  el nombre de un campo de una tabla, una constante o una función (la cual 
+  puede ser intrínseca o definida por el usuario pero no otras de las funciones 
+  agregadas de SQL).<br>
+  StDevP evalúa una población, y StDev evalúa una muestra 
+  de la población. Si la consulta contiene menos de dos registros (o ningún 
+  registro para StDevP), estas funciones devuelven un valor Null (el cual indica 
+  que la desviación estándar no puede calcularse). </p>
+<p>SELECT StDev(Gastos) AS Desviación FROM Pedidos WHERE País = 
+  'MX' </p>
+<p>SELECT StDevP(Gastos) AS Desviación FROM Pedidos WHERE País = 
+  'MX' </p>
+<p><a href="http://es.wikipedia.org/wiki/Desviaci%C3%B3n_est%C3%A1ndar" target="_blank">Información 
+  a carca de desviación estándar</a></p>
+<h3>SUM</h3>
+<p>Devuelve la suma del conjunto de valores contenido en un campo especifico de 
+  una consulta. Su sintaxis es: </p>
+<p>Sum(expr) </p>
+<p>En donde expr representa el nombre del campo que contiene los datos que desean 
+  sumarse o una expresión que realiza un cálculo utilizando los 
+  datos de dichos campos. Los operandos de expr pueden incluir el nombre de un 
+  campo de una tabla, una constante o una función (la cual puede ser intrínseca 
+  o definida por el usuario pero no otras de las funciones agregadas de SQL). 
+</p>
+<p>SELECT Sum(PrecioUnidad * Cantidad) AS Total FROM DetallePedido <br>
+</p>
+<h3>VAR, VARP</h3>
+<p align="justify">Devuelve una estimación de la varianza de una población 
+  (sobre el total de los registros) o una muestra de la población (muestra 
+  aleatoria de registros) sobre los valores de un campo. Su sintaxis es: </p>
+<p align="justify">Var(expr) <br>
+  VarP(expr) </p>
+<p align="justify">VarP evalúa una población, y Var evalúa 
+  una muestra de la población. Expr el nombre del campo que contiene los 
+  datos que desean evaluarse o una expresión que realiza un cálculo 
+  utilizando los datos de dichos campos. Los operandos de expr pueden incluir 
+  el nombre de un campo de una tabla, una constante o una función (la cual 
+  puede ser intrínseca o definida por el usuario pero no otras de las funciones 
+  agregadas de SQL) <br>
+  Si la consulta contiene menos de dos registros, Var y VarP devuelven Null (esto 
+  indica que la varianza no puede calcularse). Puede utilizar Var y VarP en una 
+  expresión de consulta o en una Instrucción SQL. </p>
+<p>SELECT Var(Gastos) AS Varianza FROM Pedidos WHERE País = 'AR' </p>
+<p>SELECT VarP(Gastos) AS Varianza FROM Pedidos WHERE País = 'UK' </p>
+<p><a href="http://es.wikipedia.org/wiki/Varianza" target="_blank">Más sobre varianza</a> 
+</p>
+<h3>COMPUTE de SQL-SERVER</h3>
+<p>Esta cláusula añade una fila en el conjunto de datos que se está 
+  recuperando, se utiliza para realizar cálculos en campos numéricos. 
+  COMPUTE actúa siempre sobre un campo o expresión del conjunto 
+  de resultados y esta expresión debe figurar exactamente igual en la cláusula 
+  SELECT y siempre se debe ordenar el resultado por la misma o al memos agrupar 
+  el resultado. Esta expresión no puede utilizar ningún ALIAS.</p>
+<p>SELECT IdCliente, Count(IdPedido) FROM Pedidos GROUP BY IdPedido <br>
+  HAVING Count(IdPedido) &gt; 20 COMPUTE Sum(Count(IdPedido)) </p>
+<p>SELECT IdPedido, (PrecioUnidad * Cantidad - Descuento) FROM [Detalles de Pedidos] 
+  <br>
+  ORDER BY IdPedido COMPUTE Sum((PrecioUnidad * Cantidad - Descuento)) // Calcula 
+  el Total <br>
+  BY IdPedido // Calcula el Subtotal<br>
+</p>
+<h2><a name="ConsultasAccion"></a>Consultas de Acción</h2>
+<p align="justify">Las consultas de acción son aquellas que no devuelven 
+  ningún registro, son las encargadas de acciones como añadir y 
+  borrar y modificar registros. Tanto las sentencias de actualización como 
+  las de borrado desencaderán (según el motor de datos) las actualizaciones 
+  en cascada, borrados en cascada, restricciones y valores por defecto definidos 
+  para los diferentes campos o tablas afectadas por la consulta.</p>
+<h3 align="justify">DELETE </h3>
+<p align="justify">Crea una consulta de eliminación que elimina los registros 
+  de una o más de las tablas listadas en la cláusula FROM que satisfagan 
+  la cláusula WHERE. Esta consulta elimina los registros completos, no 
+  es posible eliminar el contenido de algún campo en concreto. Su sintaxis 
+  es: </p>
+<p align="justify">DELETE FROM Tabla WHERE criterio </p>
+<p align="justify">Una vez que se han eliminado los registros utilizando una consulta 
+  de borrado, no puede deshacer la operación. Si desea saber qué 
+  registros se eliminarán, primero examine los resultados de una consulta 
+  de selección que utilice el mismo criterio y después ejecute la 
+  consulta de borrado. Mantenga copias de seguridad de sus datos en todo momento. 
+  Si elimina los registros equivocados podrá recuperarlos desde las copias 
+  de seguridad. </p>
+<p>DELETE FROM Empleados WHERE Cargo = 'Vendedor' </p>
+<h3>INSERT INTO </h3>
+<p align="justify">Agrega un registro en una tabla. Se la conoce como una consulta 
+  de datos añadidos. Esta consulta puede ser de dos tipo: Insertar un único 
+  registro ó Insertar en una tabla los registros contenidos en otra tabla. 
+</p>
+<h4 align="justify">Para insertar un único Registro: </h4>
+<p align="justify">INSERT INTO Tabla (campo1, campo2, ..., campoN) VALUES (valor1, 
+  valor2, ..., valorN) </p>
+<p align="justify">Esta consulta graba en el campo1 el valor1, en el campo2 y 
+  valor2 y así sucesivamente. </p>
+<h4 align="justify">Para seleccionar registros e insertarlos en una tabla nueva:</h4>
+<p align="justify">SELECT campo1, campo2, ..., campoN INTO nuevatabla FROM tablaorigen 
+  [WHERE criterios]</p>
+<p align="justify">Se pueden utilizar las consultas de creación de tabla 
+  para archivar registros, hacer copias de seguridad de las tablas o hacer copias 
+  para exportar a otra base de datos o utilizar en informes que muestren los datos 
+  de un periodo de tiempo concreto. Por ejemplo, se podría crear un informe 
+  de Ventas mensuales por región ejecutando la misma consulta de creación 
+  de tabla cada mes.</p>
+<h4 align="justify">Para insertar Registros de otra Tabla: </h4>
+<p align="justify">INSERT INTO Tabla [IN base_externa] (campo1, campo2, , campoN) 
+  <br>
+  SELECT TablaOrigen.campo1, TablaOrigen.campo2,,TablaOrigen.campoN FROM Tabla 
+  Origen</p>
+<p align="justify">En este caso se seleccionarán los campos 1,2,..., n 
+  de la tabla origen y se grabarán en los campos 1,2,.., n de la Tabla. 
+  La condición SELECT puede incluir la cláusula WHERE para filtrar 
+  los registros a copiar. Si Tabla y Tabla Origen poseen la misma estructura podemos 
+  simplificar la sintaxis a: </p>
+<p align="justify">INSERT INTO Tabla SELECT Tabla Origen.* FROM Tabla Origen </p>
+<p align="justify">De esta forma los campos de Tabla Origen se grabarán 
+  en Tabla, para realizar esta operación es necesario que todos los campos 
+  de Tabla Origen estén contenidos con igual nombre en Tabla. Con otras 
+  palabras que Tabla posea todos los campos de Tabla Origen (igual nombre e igual 
+  tipo). <br>
+  En este tipo de consulta hay que tener especial atención con los campos 
+  contadores o autonuméricos puesto que al insertar un valor en un campo 
+  de este tipo se escribe el valor que contenga su campo homólogo en la 
+  tabla origen, no incrementándose como le corresponde. </p>
+<p align="justify">Se puede utilizar la instrucción INSERT INTO para agregar 
+  un registro único a una tabla, utilizando la sintaxis de la consulta 
+  de adición de registro único tal y como se mostró anteriormente. 
+  En este caso, su código especifica el nombre y el valor de cada campo 
+  del registro. Debe especificar cada uno de los campos del registro al que se 
+  le va a asignar un valor así como el valor para dicho campo. Cuando no 
+  se especifica dicho campo, se inserta el valor predeterminado o Null. Los registros 
+  se agregan al final de la tabla. </p>
+<p align="justify">También se puede utilizar INSERT INTO para agregar un 
+  conjunto de registros pertenecientes a otra tabla o consulta utilizando la cláusula 
+  SELECT... FROM como se mostró anteriormente en la sintaxis de la consulta 
+  de adición de múltiples registros. En este caso la cláusula 
+  SELECT especifica los campos que se van a agregar en la tabla destino especificada. 
+</p>
+<p align="justify">La tabla destino u origen puede especificar una tabla o una 
+  consulta. Si la tabla destino contiene una clave principal, hay que asegurarse 
+  que es única, y con valores no nulos; si no es así, no se agregarán 
+  los registros. Si se agregan registros a una tabla con un campo Contador, no 
+  se debe incluir el campo Contador en la consulta. Se puede emplear la cláusula 
+  IN para agregar registros a una tabla en otra base de datos. </p>
+<p align="justify">Se pueden averiguar los registros que se agregarán en 
+  la consulta ejecutando primero una consulta de selección que utilice 
+  el mismo criterio de selección y ver el resultado. Una consulta de adición 
+  copia los registros de una o más tablas en otra. Las tablas que contienen 
+  los registros que se van a agregar no se verán afectadas por la consulta 
+  de adición. En lugar de agregar registros existentes en otra tabla, se 
+  puede especificar los valores de cada campo en un nuevo registro utilizando 
+  la cláusula VALUES. Si se omite la lista de campos, la cláusula 
+  VALUES debe incluir un valor para cada campo de la tabla, de otra forma fallará 
+  INSERT. </p>
+<p align="justify">Ejemplos:</p>
+<p align="justify">INSERT INTO Clientes SELECT ClientesViejos.* FROM ClientesNuevos 
+</p>
+<p align="justify">SELECT Empleados.* INTO Programadores FROM Empleados WHERE 
+  Categoria = 'Programador' </p>
+<p align="justify">Esta consulta crea una tabla nueva llamada programadores con 
+  igual estructura que la tabla empleado y copia aquellos registros cuyo campo 
+  categoria se programador </p>
+<p>INSERT INTO Empleados (Nombre, Apellido, Cargo) VALUES ( 'Luis', 'Sánchez', 
+  'Becario' ) </p>
+<p>INSERT INTO Empleados SELECT Vendedores.* FROM Vendedores WHERE Provincia = 
+  'Madrid' </p>
+<h3>UPDATE </h3>
+<p align="justify">Crea una consulta de actualización que cambia los valores 
+  de los campos de una tabla especificada basándose en un criterio específico. 
+  Su sintaxis es: </p>
+<p align="justify">UPDATE Tabla SET Campo1=Valor1, Campo2=Valor2, CampoN=ValorN 
+  WHERE Criterio</p>
+<p align="justify">UPDATE es especialmente útil cuando se desea cambiar 
+  un gran número de registros o cuando éstos se encuentran en múltiples 
+  tablas. Puede cambiar varios campos a la vez. El ejemplo siguiente incrementa 
+  los valores Cantidad pedidos en un 10 por ciento y los valores Transporte en 
+  un 3 por ciento para aquellos que se hayan enviado al Reino Unido:</p>
+<p>UPDATE Pedidos SET Pedido = Pedidos * 1.1, Transporte = Transporte * 1.03 WHERE 
+  PaisEnvío = 'UK' </p>
+<p>UPDATE no genera ningún resultado. Para saber qué registros se 
+  van a cambiar, hay que examinar primero el resultado de una consulta de selección 
+  que utilice el mismo criterio y después ejecutar la consulta de actualización. 
+</p>
+<p>UPDATE Empleados SET Grado = 5 WHERE Grado = 2 </p>
+<p>UPDATE Productos SET Precio = Precio * 1.1 WHERE Proveedor = 8 AND Familia 
+  = 3 </p>
+<p>Si en una consulta de actualización suprimimos la cláusula WHERE 
+  todos los registros de la tabla señalada serán actualizados. </p>
+<p>UPDATE Empleados SET Salario = Salario * 1.1 </p>
+<h2><a name="TiposDatos"></a>Tipos de datos</h2>
+<p>Los tipos de datos SQL se clasifican en 13 tipos de datos primarios y de varios 
+  sinónimos válidos reconocidos por dichos tipos de datos. Los tipos 
+  de datos primarios son:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td>Tipo de Datos</td>
+    <td>Longitud</td>
+    <td>Descripción</td>
+  </tr>
+  <tr>
+    <td>BINARY</td>
+    <td>1 byte</td>
+    <td>Para consultas sobre tabla adjunta de productos de bases de datos que 
+      definen un tipo de datos Binario. </td>
+  </tr>
+  <tr>
+    <td>BIT</td>
+    <td>1 byte</td>
+    <td>Valores Si/No ó True/False </td>
+  </tr>
+  <tr>
+    <td>BYTE</td>
+    <td>1 byte</td>
+    <td>Un valor entero entre 0 y 255.</td>
+  </tr>
+  <tr>
+    <td>COUNTER</td>
+    <td>4 bytes</td>
+    <td>Un número incrementado automáticamente (de tipo Long)</td>
+  </tr>
+  <tr>
+    <td>CURRENCY</td>
+    <td>8 bytes</td>
+    <td>Un entero escalable entre 922.337.203.685.477,5808 y 922.337.203.685.477,5807.</td>
+  </tr>
+  <tr>
+    <td>DATETIME</td>
+    <td>8 bytes</td>
+    <td>Un valor de fecha u hora entre los años 100 y 9999.</td>
+  </tr>
+  <tr>
+    <td>SINGLE</td>
+    <td>4 bytes</td>
+    <td>Un valor en punto flotante de precisión simple con un rango de 
+      - 3.402823*1038 a -1.401298*10-45 para valores negativos, 1.401298*10- 45 
+      a 3.402823*1038 para valores positivos, y 0.</td>
+  </tr>
+  <tr>
+    <td>DOUBLE</td>
+    <td>8 bytes</td>
+    <td><br>
+      Un valor en punto flotante de doble precisión con un rango de - 1.79769313486232*10308 
+      a -4.94065645841247*10-324 para valores negativos, 4.94065645841247*10-324 
+      a 1.79769313486232*10308 para valores positivos, y 0.</td>
+  </tr>
+  <tr>
+    <td>SHORT</td>
+    <td>2 bytes</td>
+    <td>Un entero corto entre -32,768 y 32,767.</td>
+  </tr>
+  <tr>
+    <td>LONG</td>
+    <td>4 bytes</td>
+    <td>Un entero largo entre -2,147,483,648 y 2,147,483,647.</td>
+  </tr>
+  <tr>
+    <td>LONGTEXT</td>
+    <td>1 byte por carácter</td>
+    <td>De cero a un máximo de 1.2 gigabytes.</td>
+  </tr>
+  <tr>
+    <td>LONGBINARY</td>
+    <td>Según se necesite</td>
+    <td>De cero 1 gigabyte. Utilizado para objetos OLE.</td>
+  </tr>
+  <tr>
+    <td>TEXT</td>
+    <td>1 byte por carácter</td>
+    <td>De cero a 255 caracteres. </td>
+  </tr>
+</tbody></table>
+<h2><a name="SubConsultas"></a>SubConsultas</h2>
+<p align="justify">Una subconsulta es una instrucción SELECT anidada dentro 
+  de una instrucción SELECT, SELECT...INTO, INSERT...INTO, DELETE, o UPDATE 
+  o dentro de otra subconsulta. Puede utilizar tres formas de sintaxis para crear 
+  una subconsulta:</p>
+<p align="justify">Comparación [ANY | ALL | SOME] (Instrucción sql) 
+  <br>
+  Expresión [NOT] IN (Instrucción sql) <br>
+  [NOT] EXISTS (Instrucción sql) </p>
+<p align="justify">En donde:</p>
+<p align="justify">Comparación: Es una expresión y un operador de 
+  comparación que compara la expresión con el resultado de la subconsulta.<br>
+  Expresión Es una expresión por la que se busca el conjunto resultante 
+  de la subconsulta.<br>
+  Instrucción SQL Es una instrucción SELECT, que 
+  sigue el mismo formato y reglas que cualquier otra instrucción SELECT. 
+  Debe ir entre paréntesis.</p>
+<p align="justify">Se puede utilizar una subconsulta en lugar de una expresión 
+  en la lista de campos de una instrucción SELECT o en una cláusula 
+  WHERE o HAVING. En una subconsulta, se utiliza una instrucción SELECT 
+  para proporcionar un conjunto de uno o más valores especificados para 
+  evaluar en la expresión de la cláusula WHERE o HAVING. </p>
+<p align="justify">Se puede utilizar el predicado ANY o SOME, los cuales son sinónimos, 
+  para recuperar registros de la consulta principal, que satisfagan la comparación 
+  con cualquier otro registro recuperado en la subconsulta. El ejemplo siguiente 
+  devuelve todos los productos cuyo precio unitario es mayor que el de cualquier 
+  producto vendido con un descuento igual o mayor al 25 por ciento: </p>
+<p align="justify">SELECT * FROM Productos WHERE PrecioUnidad <br>
+  ANY <br>
+  ( <br>
+  SELECT PrecioUnidad FROM DetallePedido WHERE Descuento = 0 .25 <br>
+  ) </p>
+<p align="justify">El predicado ALL se utiliza para recuperar únicamente 
+  aquellos registros de la consulta principal que satisfacen la comparación 
+  con todos los registros recuperados en la subconsulta. Si se cambia ANY por 
+  ALL en el ejemplo anterior, la consulta devolverá únicamente aquellos 
+  productos cuyo precio unitario sea mayor que el de todos los productos vendidos 
+  con un descuento igual o mayor al 25 por ciento. Esto es mucho más restrictivo.</p>
+<p align="justify">El predicado IN se emplea para recuperar únicamente 
+  aquellos registros de la consulta principal para los que algunos registros de 
+  la subconsulta contienen un valor igual. El ejemplo siguiente devuelve todos 
+  los productos vendidos con un descuento igual o mayor al 25 por ciento:</p>
+<p align="justify">SELECT * FROM Productos WHERE IDProducto <br>
+  IN <br>
+  ( <br>
+  SELECT IDProducto FROM DetallePedido WHERE Descuento = 0.25 <br>
+  ) </p>
+<p align="justify">Inversamente se puede utilizar NOT IN para recuperar únicamente 
+  aquellos registros de la consulta principal para los que no hay ningún 
+  registro de la subconsulta que contenga un valor igual. </p>
+<p align="justify">El predicado EXISTS (con la palabra reservada NOT opcional) 
+  se utiliza en comparaciones de verdad/falso para determinar si la subconsulta 
+  devuelve algún registro. Supongamos que deseamos recuperar todos aquellos 
+  clientes que hayan realizado al menos un pedido:</p>
+<p align="justify">SELECT Clientes.Compañía, Clientes.Teléfono 
+  FROM Clientes <br>
+  WHERE EXISTS ( <br>
+  SELECT FROM Pedidos WHERE Pedidos.IdPedido = Clientes.IdCliente <br>
+  ) </p>
+<p align="justify">Esta consulta es equivalente a esta otra:</p>
+<p align="justify">SELECT Clientes.Compañía, Clientes.Teléfono 
+  FROM Clientes WHERE IdClientes <br>
+  IN <br>
+  ( <br>
+  SELECT Pedidos.IdCliente FROM Pedidos <br>
+  ) </p>
+<p align="justify">Se puede utilizar también alias del nombre de la tabla 
+  en una subconsulta para referirse a tablas listadas en la cláusula FROM 
+  fuera de la subconsulta. El ejemplo siguiente devuelve los nombres de los empleados 
+  cuyo salario es igual o mayor que el salario medio de todos los empleados con 
+  el mismo título. A la tabla Empleados se le ha dado el alias T1:</p>
+<p align="justify">SELECT Apellido, Nombre, Titulo, Salario FROM Empleados AS 
+  T1 <br>
+  WHERE Salario = <br>
+  ( <br>
+  SELECT Avg(Salario) FROM Empleados WHERE T1.Titulo = Empleados.Titulo <br>
+  ) <br>
+  ORDER BY Titulo </p>
+<p align="justify">En el ejemplo anterior, la palabra reservada AS es opcional. 
+</p>
+<p align="justify">SELECT Apellidos, Nombre, Cargo, Salario FROM Empleados WHERE 
+  <br>
+  Cargo LIKE 'Agente Ven%' AND <br>
+  Salario ALL <br>
+  ( <br>
+  SELECT Salario FROM Empleados WHERE Cargo LIKE '%Jefe%' <br>
+  OR Cargo LIKE '%Director%' <br>
+  ) </p>
+<p align="justify">(Obtiene una lista con el nombre, cargo y salario de todos 
+  los agentes de ventas cuyo salario es mayor que el de todos los jefes y directores.) 
+</p>
+<p align="justify">SELECT DISTINCT NombreProducto, Precio_Unidad FROM Productos 
+  WHERE <br>
+  PrecioUnidad = <br>
+  ( <br>
+  SELECT PrecioUnidad FROM Productos WHERE NombreProducto = 'Almíbar anisado' 
+  <br>
+  ) </p>
+<p align="justify">(Obtiene una lista con el nombre y el precio unitario de todos 
+  los productos con el mismo precio que el almíbar anisado.) </p>
+<p align="justify">SELECT DISTINCT NombreContacto, NombreCompania, CargoContacto, 
+  Telefono <br>
+  FROM Clientes WHERE <br>
+  IdCliente IN ( <br>
+  SELECT DISTINCT IdCliente FROM Pedidos WHERE FechaPedido &lt;#07/01/1993# <br>
+  ) </p>
+<p align="justify">(Obtiene una lista de las compañías y los contactos 
+  de todos los clientes que han realizado un pedido en el segundo trimestre de 
+  1993.) </p>
+<p align="justify">SELECT Nombre, Apellidos FROM Empleados AS E WHERE EXISTS <br>
+  ( <br>
+  SELECT * FROM Pedidos AS O WHERE O.IdEmpleado = E.IdEmpleado <br>
+  ) </p>
+<p align="justify">(Selecciona el nombre de todos los empleados que han reservado 
+  al menos un pedido.) </p>
+<p align="justify">SELECT DISTINCT Pedidos.Id_Producto, Pedidos.Cantidad, <br>
+  ( SELECT Productos.Nombre FROM Productos WHERE Productos.IdProducto = Pedidos.IdProducto 
+  ) AS ElProducto <br>
+  FROM Pedidos WHERE Pedidos.Cantidad = 150 ORDER BY Pedidos.Id_Producto </p>
+<p align="justify">(Recupera el Código del Producto y la Cantidad pedida 
+  de la tabla pedidos, extrayendo el nombre del producto de la tabla de productos.) 
+</p>
+<p align="justify">SELECT NumVuelo, Plazas FROM Vuelos WHERE Origen = 'Madrid' 
+  <br>
+  AND Exists ( <br>
+  SELECT T1.NumVuelo FROM Vuelos AS T1 WHERE T1.PlazasLibres &gt; 0 AND T1.NumVuelo=Vuelos.NumVuelo 
+  ) </p>
+<p align="justify">(Recupera números de vuelo y capacidades de aquellos 
+  vuelos con destino Madrid y plazas libres <br>
+  Supongamos ahora que tenemos una tabla con los identificadores de todos nuestros 
+  productos y el stock de cada uno de ellos. En otra tabla se encuentran todos 
+  los pedidos que tenemos pendientes de servir. Se trata de averiguar que productos 
+  no se podemos servir por falta de stock.</p>
+<p align="justify">SELECT PedidosPendientes.Nombre FROM PedidosPendientes GROUP 
+  BY PedidosPendientes.Nombre <br>
+  HAVING SUM(PedidosPendientes.Cantidad &lt; <br>
+  ( SELECT Productos.Stock FROM Productos WHERE Productos.IdProducto = PedidosPendientes.IdProducto 
+  ) ) </p>
+<p align="justify">Supongamos que en nuestra tabla de empleados deseamos buscar 
+  todas las mujeres cuya edad sea mayor a la de cualquier hombre:</p>
+<p align="justify"> SELECT Empleados.Nombre FROM Empleados WHERE Sexo = 'M' AND 
+  Edad &gt; ANY <br>
+  (SELECT Empleados.Edad FROM Empleados WHERE Sexo ='H' ) </p>
+<p align="justify">o lo que sería lo mismo:</p>
+<p align="justify">SELECT Empleados.Nombre FROM Empleados WHERE <br>
+  Sexo = 'M' AND Edad &gt; (SELECT Max( Empleados.Edad )FROM Empleados WHERE Sexo 
+  ='H' ) </p>
+<p align="justify">&nbsp;</p>
+<h2 align="justify"><a name="ConsultasUnion"></a>Consultas de unión internas</h2>
+<h3>Consultas de Combinación entre tablas </h3>
+<p align="justify">Las vinculaciones entre tablas se realizan mediante la cláusula 
+  INNER que combina registros de dos tablas siempre que haya concordancia de valores 
+  en un campo común. Su sintaxis es: </p>
+<p align="justify">SELECT campos FROM tabla1 INNER JOIN tabla2 ON tabla1.campo1 
+  comparación tabla2.campo2 </p>
+<p align="justify">En donde:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td width="18%">tabla1, tabla2</td>
+    <td width="82%">Son los nombres de las tablas desde las que se combinan los registros.</td>
+  </tr>
+  <tr>
+    <td>campo1, campo2</td>
+    <td>Son los nombres de los campos que se combinan. Si no son numéricos, 
+      los campos deben ser del mismo tipo de datos y contener el mismo tipo de 
+      datos, pero no tienen que tener el mismo nombre.</td>
+  </tr>
+  <tr>
+    <td>comparación</td>
+    <td>Es cualquier operador de comparación relacional: =, &lt;,&lt;&gt;, 
+      &lt;=, =&gt;, ó &gt;. </td>
+  </tr>
+</tbody></table>
+<p align="justify">Se puede utilizar una operación INNER JOIN en cualquier 
+  cláusula FROM. Esto crea una combinación por equivalencia, conocida 
+  también como unión interna. Las combinaciones equivalentes son 
+  las más comunes; éstas combinan los registros de dos tablas siempre 
+  que haya concordancia de valores en un campo común a ambas tablas. Se 
+  puede utilizar INNER JOIN con las tablas Departamentos y Empleados para seleccionar 
+  todos los empleados de cada departamento. Por el contrario, para seleccionar 
+  todos los departamentos (incluso si alguno de ellos no tiene ningún empleado 
+  asignado) se emplea LEFT JOIN o todos los empleados (incluso si alguno no está 
+  asignado a ningún departamento), en este caso RIGHT JOIN. </p>
+<p align="justify">El ejemplo siguiente muestra cómo podría combinar 
+  las tablas Categorías y Productos basándose en el campo IDCategoria: 
+</p>
+<p align="justify">SELECT NombreCategoria, NombreProducto FROM Categorias INNER 
+  JOIN Productos <br>
+  ON Categorias.IDCategoria = Productos.IDCategoria </p>
+<p align="justify">En el ejemplo anterior, IDCategoria es el campo combinado, 
+  pero no está incluido en la salida de la consulta ya que no está 
+  incluido en la instrucción SELECT. Para incluir el campo combinado, incluir 
+  el nombre del campo en la instrucción SELECT, en este caso, Categorias.IDCategoria. 
+</p>
+<p align="justify">También se pueden enlazar varias cláusulas ON 
+  en una instrucción JOIN, utilizando la sintaxis siguiente: </p>
+<p align="justify">SELECT campos FROM tabla1 INNER JOIN tabla2 <br>
+  ON (tb1.campo1 comp tb2.campo1 AND ON tb1.campo2 comp tb2.campo2) <br>
+  OR ON (tb1.campo3 comp tb2.campo3) </p>
+<p align="justify">También puede anidar instrucciones JOIN utilizando la 
+  siguiente sintaxis:</p>
+<p align="justify">SELECT campos FROM tb1 INNER JOIN (tb2 INNER JOIN [( ]tb3 <br>
+  [INNER JOIN [( ]tablax [INNER JOIN ...)] <br>
+  ON tb3.campo3 comp tbx.campox)] <br>
+  ON tb2.campo2 comp tb3.campo3) <br>
+  ON tb1.campo1 comp tb2.campo2 </p>
+<h3 align="justify">Consultas de autocombinación</h3>
+<p align="justify">La autocombinación se utiliza para unir una tabla consigo 
+  misma, comparando valores de dos columnas con el mismo tipo de datos. La sintaxis 
+  en la siguiente:</p>
+<p align="justify">SELECT alias1.columna, alias2.columna, ... <br>
+  FROM tabla1 as alias1, tabla2 as alias2 <br>
+  WHERE alias1.columna = alias2.columna <br>
+  AND otras condiciones </p>
+<p align="justify">Por ejemplo, para visualizar el número, nombre y puesto 
+  de cada empleado, junto con el número, nombre y puesto del supervisor 
+  de cada uno de ellos se utilizaría la siguiente sentencia:</p>
+<p align="justify">SELECT t.num_emp, t.nombre, t.puesto, t.num_sup,s.nombre, s.puesto 
+  <br>
+  FROM empleados AS t, empleados AS s <br>
+  WHERE t.num_sup = s.num_emp</p>
+<h3 align="justify">Consultas de Combinaciones no Comunes</h3>
+<p align="justify">La mayoría de las combinaciones están basadas 
+  en la igualdad de valores de las columnas que son el criterio de la combinación. 
+  Las no comunes se basan en otros operadores de combinación, tales como 
+  NOT, BETWEEN, &lt;&gt;, etc.</p>
+<p align="justify">Por ejemplo, para listar el grado salarial, nombre, salario 
+  y puesto de cada empleado ordenando el resultado por grado y salario habría 
+  que ejecutar la siguiente sentencia:</p>
+<p align="justify">SELECT grados.grado,empleados.nombre, empleados.salario, empleados.puesto 
+  <br>
+  FROM empleados, grados <br>
+  WHERE empleados.salario BETWEEN grados.salarioinferior And grados.salariosuperior 
+  <br>
+  ORDER BY grados.grado, empleados.salario </p>
+<p align="justify">Para listar el salario medio dentro de cada grado salarial 
+  habría que lanzar esta otra sentencia:</p>
+<p align="justify">SELECT grados.grado, AVG(empleados.salario) <br>
+  FROM empleados, grados <br>
+  WHERE empleados.salario BETWEEN grados.salarioinferior And grados.salariosuperior 
+  <br>
+  GROUP BY grados.grado </p>
+<h3 align="justify">CROSS JOIN</h3>
+<p align="justify">Se utiliza en SQL-SERVER para realizar consultas de unión. 
+  Supongamos que tenemos una tabla con todos los autores y otra con todos los 
+  libros. Si deseáramos obtener un listado combinar ambas tablas de tal 
+  forma que cada autor apareciera junto a cada título, utilizaríamos 
+  la siguiente sintaxis:</p>
+<p align="justify">SELECT Autores.Nombre, Libros.Titulo <br>
+  FROM Autores CROSS JOIN Libros </p>
+<h3 align="justify">SELF JOIN</h3>
+<p align="justify">SELF JOIN es una técnica empleada para conseguir el 
+  producto cartesiano de una tabla consigo misma. Su utilización no es 
+  muy frecuente, pero pongamos algún ejemplo de su utilización.</p>
+<p align="justify">Supongamos la siguiente tabla (El campo autor es numérico, 
+  aunque para ilustrar el ejemplo utilice el nombre):</p>
+<p align="justify">Autores</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td>Código (Código del libro)</td>
+    <td>Autor (Nombre del Autor)</td>
+  </tr>
+  <tr>
+    <td>B0012</td>
+    <td>1. Francisco López</td>
+  </tr>
+  <tr>
+    <td>B0012</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr>
+    <td>B0012</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+  <tr>
+    <td>C0014</td>
+    <td>1. Francisco López</td>
+  </tr>
+  <tr>
+    <td>C0014</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr>
+    <td>D0120</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr>
+    <td>D0120</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+</tbody></table>
+<p align="justify"> Queremos obtener, para cada libro, parejas de autores:</p>
+<p align="justify">SELECT A.Codigo, A.Autor, B.Autor <br>
+  FROM Autores A, Autores B <br>
+  WHERE A.Codigo = B.Codigo </p>
+<p align="justify">El resultado es el siguiente:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr> 
+    <td>Código</td>
+    <td>Autor</td>
+    <td>Autor</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>1. Francisco López</td>
+    <td>1. Francisco López</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>1. Francisco López</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>1. Francisco López</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>2. Javier Alonso</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>2. Javier Alonso</td>
+    <td>1. Francisco López</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>2. Javier Alonso</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+  <tr>
+    <td>B0012</td>
+    <td>3. Marta Rebolledo</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>3. Marta Rebolledo</td>
+    <td> 2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>3. Marta Rebolledo</td>
+    <td>1. Francisco López</td>
+  </tr>
+  <tr> 
+    <td>C0014</td>
+    <td>1. Francisco López</td>
+    <td>1. Francisco López</td>
+  </tr>
+  <tr> 
+    <td>C0014</td>
+    <td>1. Francisco López</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>C0014</td>
+    <td>2. Javier Alonso</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>C0014</td>
+    <td>2. Javier Alonso</td>
+    <td>1. Francisco López</td>
+  </tr>
+  <tr> 
+    <td>D0120</td>
+    <td>2. Javier Alonso</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>D0120</td>
+    <td>2. Javier Alonso</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+  <tr> 
+    <td>D0120</td>
+    <td>3. Marta Rebolledo</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+  <tr> 
+    <td>D0120</td>
+    <td>3. Marta Rebolledo</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+</tbody></table>
+<p align="justify"> Como podemos observar, las parejas de autores se repiten en 
+  cada uno de los libros, podemos omitir estas repeticiones de la siguiente forma</p>
+<p align="justify">SELECT A.Codigo, A.Autor, B.Autor <br>
+  FROM Autores A, Autores B <br>
+  WHERE A.Codigo = B.Codigo AND A.Autor &lt; B.Autor </p>
+<p align="justify">El resultado ahora es el siguiente:</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr> 
+    <td>Código</td>
+    <td>Autor</td>
+    <td>Autor</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>1. Francisco López</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>B0012</td>
+    <td>1. Francisco López</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+  <tr>
+    <td>C0014</td>
+    <td>1. Francisco López</td>
+    <td>2. Javier Alonso</td>
+  </tr>
+  <tr> 
+    <td>D0120</td>
+    <td>2. Javier Alonso</td>
+    <td>3. Marta Rebolledo</td>
+  </tr>
+</tbody></table>
+<p align="justify">Ahora tenemos un conjunto de resultados en formato Autor - 
+  CoAutor.</p>
+<p align="justify">Si en la tabla de empleados quisiéramos extraer todas 
+  las posibles parejas que podemos realizar, utilizaríamos la siguiente 
+  sentencia:</p>
+<p align="justify">SELECT Hombres.Nombre, Mujeres.Nombre <br>
+  FROM Empleados Hombre, Empleados Mujeres <br>
+  WHERE Hombre.Sexo = 'Hombre' AND <br>
+  Mujeres.Sexo = 'Mujer' AND <br>
+  Hombres.Id &lt;&gt;Mujeres.Id </p>
+<p align="justify">Para concluir supongamos la tabla siguiente:</p>
+<p align="justify">Empleados</p>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td>Id</td>
+    <td>Nombre</td>
+    <td>SuJefe</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Marcos</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Lucas</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Ana</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Eva</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Juan</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Antonio</td>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+<p align="justify">Queremos obtener un conjunto de resultados con el nombre del 
+  empleado y el nombre de su jefe:</p>
+<p align="justify">SELECT Emple.Nombre, Jefes.Nombre <br>
+  FROM Empleados Emple, Empleados Jefe <br>
+  WHERE Emple.SuJefe = Jefes.Id </p>
+<h3 align="justify">Views</h3>
+<h2 align="justify"><a name="ConsultasUnionExternas"></a>Consultas de unión 
+  externas</h2>
+<p align="justify">Se utiliza la operación UNION para crear una consulta 
+  de unión, combinando los resultados de dos o más consultas o tablas 
+  independientes. Su sintaxis es:</p>
+<p align="justify">[TABLE] consulta1 UNION [ALL] [TABLE] <br>
+  consulta2 [UNION [ALL] [TABLE] consultan [ ... ]] </p>
+<p align="justify">En donde:<br>
+  consulta 1,consulta 2, consulta n Son instrucciones SELECT, el nombre de una 
+  consulta almacenada o el nombre de una tabla almacenada precedido por la palabra 
+  clave TABLE.</p>
+<p align="justify">Puede combinar los resultados de dos o más consultas, 
+  tablas e instrucciones SELECT, en cualquier orden, en una única operación 
+  UNION. </p>
+<p align="justify">El ejemplo siguiente combina una tabla existente llamada Nuevas 
+  Cuentas y una instrucción SELECT: </p>
+<p align="justify">TABLE NuevasCuentas UNION ALL <br>
+  SELECT * FROM Clientes <br>
+  WHERE CantidadPedidos &gt; 1000 </p>
+<p align="justify">Si no se indica lo contrario, no se devuelven registros duplicados 
+  cuando se utiliza la operación UNION, no obstante puede incluir el predicado 
+  ALL para asegurar que se devuelven todos los registros. Esto hace que la consulta 
+  se ejecute más rápidamente. Todas las consultas en una operación 
+  UNION deben pedir el mismo número de campos, no obstante los campos no 
+  tienen porqué tener el mismo tamaño o el mismo tipo de datos. 
+</p>
+<p align="justify">Se puede utilizar una cláusula GROUP BY y/o HAVING en 
+  cada argumento consulta para agrupar los datos devueltos. Puede utilizar una 
+  cláusula ORDER BY al final del último argumento consulta para 
+  visualizar los datos devueltos en un orden específico. </p>
+<p align="justify">SELECT NombreCompania, Ciudad FROM Proveedores WHERE Pais = 
+  'Brasil' <br>
+  UNION SELECT NombreCompania, Ciudad FROM Clientes WHERE Pais = 'Brasil' </p>
+<p align="justify">(Recupera los nombres y las ciudades de todos proveedores y 
+  clientes de Brasil) </p>
+<p align="justify">SELECT NombreCompania, Ciudad FROM Proveedores WHERE Pais = 
+  'Brasil' <br>
+  UNION SELECT NombreCompania, Ciudad FROM Clientes WHERE Pais = 'Brasil' ORDER 
+  BY Ciudad </p>
+<p align="justify">(Recupera los nombres y las ciudades de todos proveedores y 
+  clientes radicados en Brasil, ordenados por el nombre de la ciudad) </p>
+<p align="justify">SELECT NombreCompania, Ciudad FROM Proveedores WHERE Pais = 
+  'Brasil' <br>
+  UNION SELECT NombreCompania, Ciudad FROM Clientes WHERE Pais = 'Brasil' <br>
+  UNION SELECT Apellidos, Ciudad FROM Empleados WHERE Region = 'América 
+  del Sur' </p>
+<p align="justify"> (Recupera los nombres y las ciudades de todos los proveedores 
+  y clientes de brasil y los apellidos y las ciudades de todos los empleados de 
+  América del Sur) </p>
+<p align="justify">TABLE Lista_Clientes UNION TABLE ListaProveedores </p>
+<p align="justify"> (Recupera los nombres y códigos de todos los proveedores 
+y clientes) </p>
+<h2 align="justify"><a name="Estructuras"></a>Estructuras de las tablas</h2>
+<p align="justify">Recomendaciones para el diseño de tablas (exposición oral).</p>
+<p align="justify">Constraints e índices</p>
+<p align="justify">&nbsp;</p>
+<table border="1" width="451">
+  <tbody><tr>
+    <td colspan="2">Constraints</td>
+  </tr>
+  <tr>
+    <td width="92">Primary Key </td>
+    <td width="343">Sirve para definir un identificador único para cada registro de la tabla. No puede ser nulo y sólo puede haber uno por tabla. </td>
+  </tr>
+  <tr>
+    <td>Unique Key </td>
+    <td>Sirve para impedir que un dato se duplique. Puede haber varios por tabla. </td>
+  </tr>
+  <tr>
+    <td>Foreign Key </td>
+    <td>Sirve para asegurar que el contenido de un campo exista en otra tabla. </td>
+  </tr>
+</tbody></table>
+<p>Todas las restricciones genera índices pero no todos los índices generan restricciones. </p>
+<table border="1" width="451">
+  <tbody><tr>
+    <td colspan="2">Índices</td>
+  </tr>
+  <tr>
+    <td width="92">Primary Key </td>
+    <td width="343">Una restricción foránea es al mismo tiempo un índice. </td>
+  </tr>
+  <tr>
+    <td>Unique Key </td>
+    <td>Sirve para impedir que un dato se duplique. Puede haber varios por tabla. </td>
+  </tr>
+</tbody></table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body></html>

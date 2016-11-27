@@ -1,0 +1,207 @@
+create database Facturacion
+
+
+CREATE TABLE CLIENTES (
+codCLi char(3) PRIMARY KEY,
+nombreCli varchar(100),
+apellidoCli varchar(100),
+telefCli char(9)
+)
+
+
+
+
+CREATE TABLE FACTURAS (
+nroFact char(3) PRIMARY KEY,
+valorFact money default 0,
+fechaFact datetime,
+codCLi char(3),
+FOREIGN KEY(codCLi) REFERENCES CLIENTES (codCLi)
+)
+
+
+CREATE TABLE PRODUCTOS (
+codProd char(3) PRIMARY KEY,
+nombreProd varchar(100),
+unidades varchar(50),
+cantidadStock dec(8,2),
+precioUnitarioActual money
+)
+
+
+
+CREATE TABLE DETALLES (
+nroFact char(3) not null,
+codProd char(3) not null,
+cantidadComprada dec(8,2),
+precioUnitario money,
+FOREIGN KEY(nroFact) REFERENCES FACTURAS (nroFact)
+)
+
+ALTER TABLE DETALLES ADD PRIMARY KEY(nroFact,codProd)
+ALTER TABLE DETALLES ADD FOREIGN KEY(codProd) REFERENCES PRODUCTOS (codProd)
+
+
+insert into CLIENTES values('C01','Jose','Ayala','092345678')
+insert into CLIENTES values('C02','Maria','Paredes','062456789')
+insert into CLIENTES values('C03','Marta','Ortega',null)
+
+insert into FACTURAS values('001',default,'2011-03-23','C01')
+insert into FACTURAS values('002',default,'2011-03-24','C01')
+insert into FACTURAS values('003',default,'2011-03-23','C02')
+insert into FACTURAS values('004',default,'2011-03-25','C02')
+
+insert into PRODUCTOS values('P01','Arroz','libra',300,0.90)
+insert into PRODUCTOS values('P02','Azucar','libra',100,1.20)
+insert into PRODUCTOS values('P03','Aceite','litro',50,2.80)
+insert into PRODUCTOS values('P04','Atún','lata de 500 gramos',300,1.20)
+
+
+delete from DETALLES
+delete from facturas
+delete from productos
+
+select * from DETALLES
+select * from facturas
+select * from PRODUCTOS
+
+insert into DETALLES values('001','P01',15,0.95)
+insert into DETALLES values('001','P02',100,1.50)
+
+/*1. Crear un trigger que cuando se inserte una fila en la tabla DETALLES, 
+se incremente el valor de la factura en el valor correspondiente.*/
+
+drop trigger tr_Detalle
+
+create  trigger tr_Detalle
+on detalles
+AFTER insert
+as
+declare
+@valor money,
+@cantidad dec(8,2),
+@codigo char(3),
+@codProducto char(3)
+select
+@valor=inserted.precioUnitario,
+@cantidad=inserted.cantidadComprada,
+@codigo=inserted.nroFact,
+@codProducto=inserted.codProd
+from inserted
+if (@cantidad <= (select cantidadStock from PRODUCTOS where codProd=@codProducto) )
+begin
+update facturas set valorFact=valorFact+(@valor*@cantidad) where @codigo=nroFact
+update PRODUCTOS set cantidadStock=cantidadStock - @cantidad where @codProducto=codProd
+end
+else
+begin
+raiserror ('Hay menos PRODUCTOS en stock de los solicitados para la venta', 16, 1)
+rollback transaction
+end
+
+
+--PROBANDO EL TRIGGER
+
+select * from DETALLES
+select * from facturas
+select * from PRODUCTOS
+
+delete from detalles
+
+insert into DETALLES values('001','P01',15,0.95)
+update DETALLES set cantidadComprada=50 where codProd='P02'
+
+
+insert into DETALLES values('001','P02',10,1.50)
+
+
+/*2. Crear un trigger que cuando se modifique la cantidad o el precio unitario 
+en una fila de la tabla DETALLES, se modifique el valor de la factura en el valor correspondiente.*/
+select * from DETALLES
+select * from facturas
+select * from PRODUCTOS
+
+
+
+create  trigger tr_Detalle_update
+on detalles
+AFTER update
+as
+declare
+@valor money,
+@cantidad dec(8,2),
+@codigo char(3),
+@codProducto char(3)
+select
+@valor=inserted.precioUnitario,
+@cantidad=inserted.cantidadComprada,
+@codigo=inserted.nroFact,
+@codProducto=inserted.codProd
+from inserted
+if exists (select * from FACTURAS where nroFact=@codigo 
+and @cantidad <= (select cantidadStock from PRODUCTOS where codProd=@codProducto)) 
+begin
+update facturas set valorFact=valorFact+(@valor*@cantidad) where @codigo=nroFact
+update PRODUCTOS set cantidadStock=cantidadStock-(@cantidad) where @codProducto=codProd
+end 
+else
+begin
+raiserror ('Hay menos PRODUCTOS en stock de los ', 16, 1)
+rollback transaction
+end
+
+
+
+/*3. Crear un trigger que cuando se borre una fila de la tabla DETALLES se disminuya el valor 
+de la factura en el valor correspondiente.*/
+
+select * from DETALLES
+select * from facturas
+select * from PRODUCTOS
+
+
+create  trigger tr_Detalle_delete
+on detalles
+AFTER delete
+as
+declare
+@valor money,
+@cantidad dec(8,2),
+@codigo char(3),
+@codProducto char(3)
+select
+@valor=deleted.precioUnitario,
+@cantidad=deleted.cantidadComprada,
+@codigo=deleted.nroFact,
+@codProducto=deleted.codProd
+from deleted
+begin
+update facturas set valorFact=valorFact-(@valor*@cantidad) where @codigo=nroFact
+update PRODUCTOS set cantidadStock= cantidadStock+(@cantidad) where @codProducto=codProd
+end 
+
+
+
+
+
+
+create trigger DIS_ventas_insertar
+  on ventas
+  for insert
+  as
+   declare @stock int
+   select @stock= stock from libros
+		 join inserted
+		 on inserted.codigolibro=libros.codigo
+		 where libros.codigo=inserted.codigolibro
+  if (@stock>=(select cantidad from inserted))
+    update libros set stock=stock-inserted.cantidad
+     from libros
+     join inserted
+     on inserted.codigolibro=libros.codigo
+     where codigo=inserted.codigolibro
+  else
+  begin
+    raiserror ('Hay menos libros en stock de los solicitados para la venta', 16, 1)
+    rollback transaction
+  end

@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaPrincipal.master.cs" Inherits="PryDesempeñoEmpleados.Presentacion.PaginaPrincipal" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>Desempeño de Empleados</title>
+        <link href="Estilos/Estilos_Css.css" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Playfair+Display|Pontano+Sans" rel="stylesheet" type="text/css"/>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div class="header-wrapper">
+	            <div class="header">
+    	            <div class="header-content">
+        	            <div class="logo">
+            	            <h1>Desempeño de Empleados</h1>
+                        </div>
+                        <div class="menu">
+            	            <ul>
+                                <li><a class="active" href="Inicio.aspx">Inicio</a></li>
+                                <li><a class="active" href="RegistroEmpleados.aspx">Registro</a></li>
+                                <li><a class="active" href="Perfiles.aspx">Perfiles</a></li>
+                                <li><a class="active" href="Sesion.aspx">Sesión</a></li>
+                                <li><asp:ImageButton ID="btnAdmin" runat="server" Height="40px" 
+                                        ImageUrl="~/Presentacion/Images/Admi.png" onclick="btnAdmi_Click" 
+                                        Width="111px" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-wrapper" align="center" style="padding: inherit">	   
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer-wrapper">
+	            <div class="footer" align="center">
+    	            <div class="footer-panel marRight">
+        	            <h1>Desarrollo de Sistemas de Información</h1>
+                        <p>&nbsp;</p>
+                            <h2>Fredy Vicente Sánchez Aretaga</h2>
+                            <h2>Lourdes Belen Peñafiel Garcia</h2>
+                            <h2>Luis Gustavo Maldonado Moreno</h2>
+                    </div>
+                    <div class="footer-panel marRight">
+        	            <h1>Síguenos</h1>
+                            <h2>Ladrón de Guevara E11-2530.</h2>
+                                <p>info@epn.edu.ec</p>
+                                <ul style="position: static; z-index: auto; width: 226px;">
+                                    <li><a href="https://www.facebook.com/"><img src="images/icon-fb.gif" /></a></li>
+                                    <li><a href="https://www.instagram.com/"><img src="images/icon-aol1.gif" /></a></li>
+                                    <li><a href="https://twitter.com/?lang=es"><img src="images/icon-twit.gif" /></a></li>
+                                    <li><a href="https://www.google.com/intl/es-419/drive/"><img src="images/icon-linkde.gif" /></a></li>
+                                </ul>
+                    </div>
+                    <div class="footer-panel marRight">
+        	            <h1>Información</h1>
+                            <p>&nbsp;</p>
+                        <p>Este proyecto se lo realiza&nbsp; en la Escuela Politécnica Nacional, por parte 
+                            de la Facultad&nbsp; de Tecnógos para el curso de Desarrollo de Sistemas de 
+                            Información.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-strip-wrapper">
+	            <table align="center" width="100%" style="height: 51px">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analisis de Sistemas Informaticos </td>
+                        <td align="right">&nbsp;2016-A -Desarrollo de Sistemas de Informacion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

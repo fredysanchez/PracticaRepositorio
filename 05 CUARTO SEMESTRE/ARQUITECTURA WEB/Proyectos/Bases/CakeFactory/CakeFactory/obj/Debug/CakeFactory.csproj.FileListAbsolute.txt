@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\obj\Debug\ResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\bin\CakeFactory.dll
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\bin\CakeFactory.pdb
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\obj\Debug\CakeFactory.dll
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\obj\Debug\CakeFactory.pdb
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\CakeFactory\CakeFactory\bin\CakeFactory.dll
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\CakeFactory\CakeFactory\bin\CakeFactory.pdb
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\CakeFactory\CakeFactory\obj\Debug\CakeFactory.dll
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\CakeFactory\CakeFactory\obj\Debug\CakeFactory.pdb

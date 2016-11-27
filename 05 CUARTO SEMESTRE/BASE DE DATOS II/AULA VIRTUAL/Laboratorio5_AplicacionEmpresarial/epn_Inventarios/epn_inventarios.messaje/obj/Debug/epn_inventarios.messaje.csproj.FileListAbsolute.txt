@@ -1,0 +1,9 @@
+C:\epn_inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.dll
+C:\epn_inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.pdb
+C:\epn_inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.dll
+C:\epn_inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.csprojResolveAssemblyReference.cache
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.pdb

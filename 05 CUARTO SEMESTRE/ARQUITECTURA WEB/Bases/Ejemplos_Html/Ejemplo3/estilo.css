@@ -1,0 +1,117 @@
+body {
+    background-image: url("lineas.png");
+    background-size: cover;
+
+
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size:300%;
+}
+
+h3 {
+    color: black;
+    font-family:verdana;
+    font-size:150%;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    border:3px solid black;
+    padding:10px;
+    margin:30px;
+    color: black;
+}
+
+
+img{
+   padding-left:560px;
+}
+
+table, tr, td, th{
+    	border: 2px solid black;
+    	border-collapse: collapse;
+	
+}
+
+
+table#t01 tr:nth-child(even) {
+    	background-color: #eee;
+	text-align: left;
+	
+}
+table#t01 tr:nth-child(odd) {
+    	background-color: #fff;
+	text-align: left;
+}
+table#t01 th {
+   	 color: white;
+   	 background-color: blue;
+	text-align: center;
+	padding: 15px;
+}
+
+ul#menu li {
+    display:inline;
+}
+
+ul#menu {
+    padding: 0;
+}
+
+
+ul#menu li a {
+    background-color: grey;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 15px 15px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: blue;
+}
+
+
+.listas {
+    background-image: url("madera.jpg");
+    background-size: cover;
+    color:white;
+    margin:20px;
+    padding:20px;
+} 
+
+#footer {
+    background-image: url("madera.jpg");
+    background-size: cover;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+#nav {
+	background-image: url("madera.jpg");
+    	background-size: cover;
+    line-height:30px;
+	color:white;
+    height:900px;
+    width:160px;
+    float:left;
+    padding:5px;	      
+}
+
+#section {
+    width:500px;
+    float:left;
+    padding:10px;	 	 
+}
+
+#aside {
+    width:500px;
+    float:left;
+    padding:10px;	 	 
+}

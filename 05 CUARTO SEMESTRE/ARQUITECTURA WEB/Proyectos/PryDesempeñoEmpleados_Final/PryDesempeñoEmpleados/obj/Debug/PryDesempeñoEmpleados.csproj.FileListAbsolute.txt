@@ -1,0 +1,16 @@
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_2444\PryDesempeñoEmpleados\bin\PryDesempeñoEmpleados.dll
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_2444\PryDesempeñoEmpleados\bin\PryDesempeñoEmpleados.pdb
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_2444\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.dll
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_2444\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.pdb
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_2444\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.csprojResolveAssemblyReference.cache
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\bin\PryDesempeñoEmpleados.dll
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\bin\PryDesempeñoEmpleados.pdb
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.csprojResolveAssemblyReference.cache
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.dll
+C:\Users\TU FACIL CREDITO\Desktop\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.pdb
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\bin\PryDesempeñoEmpleados.dll
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\bin\PryDesempeñoEmpleados.pdb
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.dll
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.pdb
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.csprojResolveAssemblyReference.cache
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\PryDesempeñoEmpleados_Final\PryDesempeñoEmpleados\obj\Debug\PryDesempeñoEmpleados.dll.licenses

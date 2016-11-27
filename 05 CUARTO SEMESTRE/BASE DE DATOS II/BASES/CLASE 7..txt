@@ -1,0 +1,68 @@
+Eleccion de una DBMS
+
+-Sistema operativo de apoyo
+	linuz-OS-SQL o MY-SQL
+	My friend de IBM-DB2
+
+-Tipo de organizacion
+-Benchmarks
+-Escalabilidad.- constante aumento de datos sigue soportando y funcionando con normalidad
+-Disponibilidad de herramientas de apoyo de software
+y tambien el 
+Soporte tecnico
+
+alta disponibilidad.- que el sistema no puede pasar sin servir a los usuarios mucho tiempo
+
+Computacion en la nube
+Azure.- da nombre a todos los elemento de la nuve que utilizamos con SQL
+Todo sistema de gestion de bdd tiene un arhivo de control(ARCHIVO DE CONFIGURACION).- cuando se va a iniciar la bdd como quiere q este configurada
+Archivos temporales, cuando se intala sql server cuantas bdd se instalan 4 bdd. La MASTER(bdd de |catalago| de sql server, antes expuesta al usuario
+Tiene muchas vistas, Microsoft puso una capa sobre la bdd de sistemas para q no sea muy accesible al usuario)
+
+Cuando hay datos temporales se almacenan en TEMDB
+Base de datos Model.- Create database ... En este momento se genera una bdd q creamos como una copia de una bdd generica. Tiene una estructura especifica
+que luego nosotros vamos modificandola para crearla a nuestra manera segun nuestras necesidades. Como para un esculto un marmol de piedra en donde se
+da la figura.
+
+MSDB.- se usa para calenderizar tareas en SQL SERVER, x ejemplo q se haga un respaldo diario a las 8 de la noche eso es almacenado o realizar una auditoria de datos
+(programar-registro)
+
+Base de datos por defecto.- son ejemplos de bdd q se instalan con la DBMS si nosotros queremos
+
+La bdd requiere memoria para su funcionamiento(GRAFICO DE INSTALAR LA DBMS - explicado)REQUERIMIENTOS DE MEMORIA RAM
+
+CARACTERISTICA.- Tiempo de acceso.- es el tiempo q se demora el sistema desde q se solicita el dato hasta q es localizado en el disco
+Tiempo de acceso en disco.- ubicar la cabeza lectora en el sector en el q se va a leer(entre 10-20ms(10E-3sg))
+Tiempo de acceso en RAM.-(entre 10-10 nanoseg(10E-9sg)).
+Para q se tenga un buen rendimiento la informacion q necesitan los programas debe estar en la MEMORIA RAM
+Desplazamiento LRU(Sistema de susticion de bloques en el bufer de datos es LRU(Menos recientemente utilizado-LESS RECENTLY USED))
+Mientras mas memoria tengamos mas bloques vamos a tener en el bufer y vamos a tener la probabilidad de q los datos q necesitan los programas este en memoria
+q pasi si mi tamaño de bloq es pequeño mas bloques estarn en el buffer y podre atender a mas usuarios, a mas programas xq hay mas bloques en memoria
+si tenemos mas bloques se llena el buffer.
+Cuando es conveniente tener un bloque grande?
+----------CRITERIOS PARA EL TAMAÑO DE BLOQ
+Cuando con frecuencia se recuperen datos borrados x rango. Ejemplo
+	SELECT * FROM CLIENTES(Conviene un Bloq Grande)
+Cuando se requiere informacion puntual. Ej
+	select * from CLIENTES where codCli=5280 (Conviene bloqs peqs)
+
+BLOQUEOS ACTIVOS.- es la forma como se maneja la concurrencia mediante bloqueos, es decir cuando un programa necesita un dato lo bloquea y si otro programa necesita ese dato
+espera hasta q el primer programa lo bloquea, y si hay un tercer programa q necesita ese dato se mantiene en la cola.
+Donde se guardan las colas de espera? EN LA MEMORIA RAM
+|OPTIMIZADOR|.- programa q diseña las rutas optimas para la consultas.
+Las instrucciones de ordenamiento 
+	INSTRUCCIONES DE ORDENAMIENTO
+		sort
+		group by
+		order by
+		..
+		Son muy caras en recursos para el sistema
+NOTA//No utilizarlas nunca dentro de un aplicacion, SOLO cuando haga un SELECT desde el editor de SQL, PERO es recomendable no utilizar en una aplicacion xq esa instruccion se ejecuta
+muchas veces en el dia deteriorando el rendimiento del sistema.
+Resultados parciales de ordenamiento y otras operaciones complejas .-En memoria RAM se hacen las operaciones de bbd para recuperacion o cualquier cosa.
+Ordenamiento
+tabla clientes ordenarlas x apellidoCliente ordenada antes x clave primaria
+el sistema internamente(ORDER BY) toma x partes a la memoria RAM y depositarla en disco sucesivamente.(Subir a memoria y bajar otra vez)
+
+Cache para logs.- espacio de memoria en donde se registran los cambios de bloq. Son regsitros de los cambios q ha sufrido los datos en la BDD.
+Llamada cache xq es donde los datos salen de la meoria RAM al disco

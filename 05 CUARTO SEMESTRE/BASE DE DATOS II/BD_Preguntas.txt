@@ -1,0 +1,12 @@
+1.- Indique los dos mecanismos de recuperacion de la base de datos ante un escenario de contingencia.
+	-Backups
+	-Cluster
+2.- Diferencia entre respaldo diferencial y respaldo completo.
+	-COMPLETO: Es una copia exacta de la base de datos cada cierto intervalo de tiempo.
+	-DIFERENCIAL: Se realiza una copia solamente de la diferencia en funcion de una base de datos anterior.
+3.- Cuando se utiliza una configuracion de cluster(en que escenario).
+	-Alta concurrencia.
+	-Alta disponibilidad.
+    CONMUTACION:
+	-Por Fallos.
+	-Por balanceo de carga.

@@ -1,0 +1,36 @@
+C:\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.dll
+C:\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.pdb
+C:\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.dll
+C:\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.pdb
+C:\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.csprojResolveAssemblyReference.cache
+C:\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.dll
+C:\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.pdb
+C:\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.dll
+C:\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.dll
+F:\FINAL\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.dll
+F:\FINAL\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.dll
+F:\FINAL\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.csprojResolveAssemblyReference.cache
+F:\FINAL\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.dll
+F:\FINAL\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.business.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.core.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\bin\Debug\epn.inventarios.message.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.csprojResolveAssemblyReference.cache
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.business\obj\Debug\epn.inventarios.business.pdb

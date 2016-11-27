@@ -1,0 +1,18 @@
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.dll
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.pdb
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.pdb
+C:\epn_inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.csprojResolveAssemblyReference.cache
+C:\epn_inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.dll
+C:\epn_inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.pdb
+C:\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.messaje.dll
+C:\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.messaje.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.messaje.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.messaje.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.csprojResolveAssemblyReference.cache
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.pdb

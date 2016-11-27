@@ -1,0 +1,46 @@
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.dll
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.pdb
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.dll
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.dll
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.dll
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.pdb
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.pdb
+C:\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.pdb
+C:\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.csprojResolveAssemblyReference.cache
+C:\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.dll
+C:\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.csprojResolveAssemblyReference.cache
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.pdb
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.dll
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.pdb
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.dll
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.dll
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.dll
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.pdb
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.pdb
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.pdb
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.csprojResolveAssemblyReference.cache
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.dll
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.pdb
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.services.pdb
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\EntityFramework.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.business.pdb
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.message.pdb
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\epn.inventarios.core.pdb
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\bin\EntityFramework.xml
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.csprojResolveAssemblyReference.cache
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.services\obj\Debug\epn.inventarios.services.pdb

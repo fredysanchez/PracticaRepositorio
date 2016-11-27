@@ -1,0 +1,11 @@
+Administrador de Base de Datos: es una funcion, es un conglomerado de personas, una unidad administrativa
+Su mision es garantizar q las bdd esten disponibles cuando los usuarios autorizados lo pidan.
+
+Gestion de informacion..- operaciones
+Administradores hacen q eso sea posible, sin un administrador la herramienta no sirve para nada.
+catalogar.- catalogo. lugar de origen ahi va a estar almacenada la direccion del usuraio, tipo de datos
+not null, number fall
+DBA SISTEMA.- encargado de la infraestructura donde esta la bdd.
+DATA WAREHOUSE.- es una base de datos especial orientada a la toma de decisiones, normalmente se construye extra
+yendo datos de algunas bases de datos operativas de la organizacion.
+? Impacto del tiempo de inactividad.¿Cuanto pierde la organizacion x cada hora q la bdd este sin funcionar?

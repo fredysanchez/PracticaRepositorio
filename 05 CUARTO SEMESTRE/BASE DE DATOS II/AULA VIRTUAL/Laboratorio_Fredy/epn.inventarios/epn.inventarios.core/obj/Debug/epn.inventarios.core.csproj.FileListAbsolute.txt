@@ -1,0 +1,35 @@
+C:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+C:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+C:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+C:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+C:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+F:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+F:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+F:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+F:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+F:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+E:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+E:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+E:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+E:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+E:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+F:\FINAL\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+F:\FINAL\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+F:\FINAL\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb

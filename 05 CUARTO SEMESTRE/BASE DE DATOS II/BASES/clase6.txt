@@ -1,0 +1,65 @@
+El lenguaje SQL(Structure Query Languaje), lenguaje para acceder datos de una bdd esta compuesto de tres componentes
+Lenguaje con el q nosotros manipulamos la bdd.
+-1.LDD(Lenguaje de definicion de datos).- construir bdd y modificar bdd.
+	Tiene instrucciones CREATE, DROP, ALTER
+	Para borrar el DROP Y modificar el ALTER
+-2.LMD(Lenguaje de manipulacion de datos).- una ves creado el repositorio de bdd, se pueden utilizar las
+	siguientes instrucciones SELECT, INSERT, UPDATE y DELETED
+-3.LCD(Lenguaje de control de datos).- se basa en dos instrucciones: GRANT(DAR PRIVILEGIOS), REVOKE(REVOCAR PRIVILEGIOS AL USUARIO), 
+	este nos sirve para gestionar usuarios.
+
+//Un usuario normal q usa la bdd bancaria o cajeros, atraves de una interfaz de aplicacion(pantalla computadora que ingresamos alguna orden y el S nos responde)
+el codigo aplicacion esta en un programa, accede a una consulta de manejo, pero interectuamos con la bdd atraves de una aplicacion
+realizamos una consulta(SELECT, INSERT, UPDATE dependiendo) esto luego es compilado para//
+
+GESTOR DE MEMORIA INTERMEDIA o buffer o cache.- los bloques de disco llegan al puerto de donde es enviado luego a las aplicaciones
+Un --indice-- es una estructura de datos en arbol q se adhiere en una tabla para acelerar las consultas por uno de los 
+atributos de la tabla (hacer mas rapidas las consultas de acuerdo a las claves de busqueda).
+EJEMPLO
+	Select nroFact, valorFact, fechaFact
+	From FACTURAS 
+	Where nroFact=1206(estoy haciendo una busqueda de informacion en la bdd con este numero)
+El indice tiene una estructura similar a la de un libro
+Diccionario de datos o catalago.- es una bdd de sistema q almacena la informacion q creamos con el lenguaje de definicion de datos
+Se utiliza
+-BDD de usuario
+-Tablas de cada BD
+-Columnas,
+-Tipos de Datos
+-Usuarios
+
+-Triggers, PA, Vistas, Cursores
+
+Datos estadisticos.- son datos de la informacion q se tiene en cada tabla x ejemplo
+-# de filas de las tablas
+-tamaño en bits de cada fila
+-# de bloqs q contiene la tabla
+-# de valores distintos de cada columna
+-# de niveles de cada indice
+-# de filas x bloq
+TODO ESTO SE UTILIZA para hacer Optimizacion de consultas.
+Poder otimizar una consulta q realiza el usuario
+Algebra relacional.- conjunto de operaciones sobre otras tablas obteniendo como resultado otras tablas
+	Operacion SELECT.- seleccionar un conjunto de tablas q cumple una condicion
+En el AR se basa las consultas de SQL
+PARA CADA CONSULTA Q PONEMOS EN EL EDITOR EL SISTEMA OPTIMIZADOR DE CONSULTAS LE TRADUCE EN VARIAS ALTERNATIVAS DE (ar) Y evalua cual de esas
+opciones tiene menos costo para el sistema, en base a los datos estadisticos.
+
+La Optimizacion de consultas pule las consultas y saca un camino optimo para realizar la consulta.
+
+
+GRUPO 3
+TEMA: instalacion y configuracion de SQL
+Tarea 1.- instalacion y configuracion de SQL en forma personalizada, tenemos q configuarar algunos parametros.
+Determinar q parametros configurar y como configurar
+INFORME para presentar todo el proceso de secual server explicando cada pantalla
+	Opciones de Instalacion.- si los usuraios van a utilizar la validacion.-
+Cada pantalla porq se elige esa cosa
+Tambien INSTALAR el sistema de ejemplo de secuare server .- el adventure works 2012
+instalar LA VERSION DEVELOPER EMPRESARIAL Q TIENE TODAS LAS OPCIONES
+CON ANALISIS SERVER, REPORTER SERVER, LAS 3 HERRAMIENTAS DE INTELIGENCIA DE NEGOCIO
+
+Dentro del Adventure works(informe).- que representa, q es??
+
+RESUMIENDO
+Grupos de 3

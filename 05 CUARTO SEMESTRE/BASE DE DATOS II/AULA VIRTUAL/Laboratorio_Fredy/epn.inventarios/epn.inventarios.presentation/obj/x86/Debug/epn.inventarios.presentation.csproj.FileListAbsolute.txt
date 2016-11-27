@@ -1,0 +1,99 @@
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.exe
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.pdb
+C:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.Properties.Resources.resources
+C:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csproj.GenerateResource.Cache
+C:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+C:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+C:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csprojResolveAssemblyReference.cache
+C:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmRegistro.resources
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.dll
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.dll
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.dll
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\Newtonsoft.Json.dll
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.pdb
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.pdb
+C:\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.exe
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmRegistro.resources
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.Properties.Resources.resources
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csproj.GenerateResource.Cache
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmComponentes.resources
+F:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+F:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.exe
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.pdb
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.dll
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.dll
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.dll
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\Newtonsoft.Json.dll
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.pdb
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.pdb
+F:\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.pdb
+F:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csprojResolveAssemblyReference.cache
+F:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmComponentes.resources
+F:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmRegistro.resources
+F:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.Properties.Resources.resources
+F:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csproj.GenerateResource.Cache
+E:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+E:\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.exe
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csprojResolveAssemblyReference.cache
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmComponentes.resources
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmRegistro.resources
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.Properties.Resources.resources
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csproj.GenerateResource.Cache
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.exe
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.dll
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.dll
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.dll
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\Newtonsoft.Json.dll
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.pdb
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csprojResolveAssemblyReference.cache
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmComponentes.resources
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmRegistro.resources
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.Properties.Resources.resources
+F:\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csproj.GenerateResource.Cache
+C:\Users\TU FACIL CREDITO\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+C:\Users\TU FACIL CREDITO\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.exe
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.exe
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\Newtonsoft.Json.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.message.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\epn.inventarios.presentation.utilities.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\bin\Debug\presentation.utilities.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csprojResolveAssemblyReference.cache
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmComponentes.resources
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.FrmRegistro.resources
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.Properties.Resources.resources
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation\obj\x86\Debug\epn.inventarios.presentation.csproj.GenerateResource.Cache

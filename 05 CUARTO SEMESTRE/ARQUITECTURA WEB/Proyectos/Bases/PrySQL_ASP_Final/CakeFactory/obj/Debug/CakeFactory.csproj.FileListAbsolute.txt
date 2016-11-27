@@ -1,0 +1,30 @@
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\bin\CakeFactory.dll
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\bin\CakeFactory.pdb
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\obj\Debug\ResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\obj\Debug\CakeFactory.dll
+c:\users\admin\documents\visual studio 2010\Projects\CakeFactory\CakeFactory\obj\Debug\CakeFactory.pdb
+F:\ \.Trashes\PrySQL_ASP\CakeFactory\bin\CakeFactory.dll
+F:\ \.Trashes\PrySQL_ASP\CakeFactory\bin\CakeFactory.pdb
+F:\ \.Trashes\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.dll
+F:\ \.Trashes\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.pdb
+F:\ \.Trashes\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\PrySQL_ASP\CakeFactory\bin\CakeFactory.dll
+C:\Users\Admin\Desktop\PrySQL_ASP\CakeFactory\bin\CakeFactory.pdb
+C:\Users\Admin\Desktop\PrySQL_ASP\CakeFactory\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.dll
+C:\Users\Admin\Desktop\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.pdb
+C:\Users\TU FACIL CREDITO\Desktop\PrySQL_ASP\CakeFactory\bin\CakeFactory.dll
+C:\Users\TU FACIL CREDITO\Desktop\PrySQL_ASP\CakeFactory\bin\CakeFactory.pdb
+C:\Users\TU FACIL CREDITO\Desktop\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.csprojResolveAssemblyReference.cache
+C:\Users\TU FACIL CREDITO\Desktop\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.dll
+C:\Users\TU FACIL CREDITO\Desktop\PrySQL_ASP\CakeFactory\obj\Debug\CakeFactory.pdb
+G:\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\bin\CakeFactory.dll
+G:\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\bin\CakeFactory.pdb
+G:\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\obj\Debug\CakeFactory.csprojResolveAssemblyReference.cache
+G:\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\obj\Debug\CakeFactory.dll
+G:\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\obj\Debug\CakeFactory.pdb
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\bin\CakeFactory.dll
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\bin\CakeFactory.pdb
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\obj\Debug\CakeFactory.csprojResolveAssemblyReference.cache
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\obj\Debug\CakeFactory.dll
+D:\05 CUARTO SEMESTRE\ARQUITECTURA WEB\Proyectos\Bases\PrySQL_ASP_Final\CakeFactory\obj\Debug\CakeFactory.pdb

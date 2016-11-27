@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Proyecto.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <style type="text/css">
+        #id2
+        {
+            height: 87px;
+            width: 948px;
+        }
+        #menu
+        {
+            text-align: right;
+        }
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 120px;
+        }
+        .style3
+        {
+        }
+        .style4
+        {
+            width: 138px;
+        }
+        .style6
+        {
+            width: 107px;
+        }
+        .style7
+        {
+            width: 1099px;
+            background-color: #FFFFFF;
+        }
+        .style8
+        {
+            width: 836px;
+        }
+        .style9
+        {
+            font-size: xx-large;
+            color: #FF0000;
+            font-family: "Adobe Garamond Pro";
+        }
+    </style>
+</head>
+<body>
+<form id="Form1" runat="server">
+    <div class="footer">
+        
+        <table class="style1">
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td class="style8">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style9" colspan="2">
+                    <strong>ALGORITMOS FUNDAMENTALES</strong></td>
+                <td>
+                    <asp:Image ID="Image1" runat="server" Height="128px" 
+                        ImageUrl="~/Imagenes/Logo.png" Width="136px" />
+                </td>
+            </tr>
+            </table>
+        
+    </div>
+    <table class="style1">
+        <tr>
+            <td class="style6">
+                &nbsp;</td>
+            <td>
+                     <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/RegistroEmplado.aspx" Text="REGISTRAR" Value="REGISTRAR">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Empleados.aspx" Text="EMPLEADOS" Value="EMPLEADOS">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Sesion.aspx" Text="INICIO SESION" Value="INICIO SESION">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Administrador.aspx" Text="ADMINISTRADOR" Value="ADMINISTRADOR">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Informacion" 
+                            Value="Informacion"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+               
+
+                </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+&nbsp;<table class="style1">
+        <tr>
+            <td class="style4">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style4">
+                &nbsp;</td>
+            <td class="style7" >
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style4">
+                <br />
+            </td>
+            <td  >
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style4">
+                &nbsp;</td>
+            <td  >
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

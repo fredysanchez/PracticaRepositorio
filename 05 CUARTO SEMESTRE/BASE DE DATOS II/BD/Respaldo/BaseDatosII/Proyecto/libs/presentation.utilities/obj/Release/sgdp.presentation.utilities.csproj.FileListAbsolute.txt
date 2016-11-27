@@ -1,0 +1,9 @@
+C:\sgdp\sgdp.presentation.utilities\bin\Release\sgdp.presentation.utilities.dll
+C:\sgdp\sgdp.presentation.utilities\bin\Release\sgdp.presentation.utilities.pdb
+C:\sgdp\sgdp.presentation.utilities\bin\Release\Newtonsoft.Json.dll
+C:\sgdp\sgdp.presentation.utilities\bin\Release\sgdp.utilities.dll
+C:\sgdp\sgdp.presentation.utilities\bin\Release\sgdp.utilities.pdb
+C:\sgdp\sgdp.presentation.utilities\bin\Release\Newtonsoft.Json.xml
+C:\sgdp\sgdp.presentation.utilities\obj\Release\sgdp.presentation.utilities.csprojResolveAssemblyReference.cache
+C:\sgdp\sgdp.presentation.utilities\obj\Release\sgdp.presentation.utilities.dll
+C:\sgdp\sgdp.presentation.utilities\obj\Release\sgdp.presentation.utilities.pdb

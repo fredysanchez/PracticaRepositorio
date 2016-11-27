@@ -1,0 +1,20 @@
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.pdb
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.pdb
+C:\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.csprojResolveAssemblyReference.cache
+C:\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.dll
+C:\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventario.presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\bin\Debug\epn_inventarios.messaje.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.csprojResolveAssemblyReference.cache
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventario.presentation.utilities\obj\Debug\epn_inventario.presentation.utilities.pdb

@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="epn_InventarioEquiposModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="epn_InventarioEquiposModelStoreContainer">
+          <EntitySet Name="PROVEEDOR" EntityType="epn_InventarioEquiposModel.Store.PROVEEDOR" store:Type="Tables" Schema="compra" />
+          <EntitySet Name="ESTADO_EQUIPO" EntityType="epn_InventarioEquiposModel.Store.ESTADO_EQUIPO" store:Type="Tables" Schema="mantenimiento" />
+          <EntitySet Name="MANTENIMIENTO" EntityType="epn_InventarioEquiposModel.Store.MANTENIMIENTO" store:Type="Tables" Schema="mantenimiento" />
+          <EntitySet Name="MANTENIMIENTO_REEMPLAZO_COMPONENTES" EntityType="epn_InventarioEquiposModel.Store.MANTENIMIENTO_REEMPLAZO_COMPONENTES" store:Type="Tables" Schema="mantenimiento" />
+          <EntitySet Name="TECNICO" EntityType="epn_InventarioEquiposModel.Store.TECNICO" store:Type="Tables" Schema="mantenimiento" />
+          <EntitySet Name="TIPO_MANTENIMIENTO" EntityType="epn_InventarioEquiposModel.Store.TIPO_MANTENIMIENTO" store:Type="Tables" Schema="mantenimiento" />
+          <EntitySet Name="ASIGNACION" EntityType="epn_InventarioEquiposModel.Store.ASIGNACION" store:Type="Tables" Schema="registro" />
+          <EntitySet Name="COMPONENTES" EntityType="epn_InventarioEquiposModel.Store.COMPONENTES" store:Type="Tables" Schema="registro" />
+          <EntitySet Name="EQUIPO" EntityType="epn_InventarioEquiposModel.Store.EQUIPO" store:Type="Tables" Schema="registro" />
+          <EntitySet Name="RESPONSABLE" EntityType="epn_InventarioEquiposModel.Store.RESPONSABLE" store:Type="Tables" Schema="registro" />
+          <EntitySet Name="TIPO_COMPONENTE" EntityType="epn_InventarioEquiposModel.Store.TIPO_COMPONENTE" store:Type="Tables" Schema="registro" />
+          <EntitySet Name="TIPO_EQUIPO" EntityType="epn_InventarioEquiposModel.Store.TIPO_EQUIPO" store:Type="Tables" Schema="registro" />
+          <AssociationSet Name="FK_ASIGNACION_EQUIPO" Association="epn_InventarioEquiposModel.Store.FK_ASIGNACION_EQUIPO">
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+            <End Role="ASIGNACION" EntitySet="ASIGNACION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ASIGNACION_RESPONSABLE" Association="epn_InventarioEquiposModel.Store.FK_ASIGNACION_RESPONSABLE">
+            <End Role="RESPONSABLE" EntitySet="RESPONSABLE" />
+            <End Role="ASIGNACION" EntitySet="ASIGNACION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_COMPONENTES_EQUIPO" Association="epn_InventarioEquiposModel.Store.FK_COMPONENTES_EQUIPO">
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+            <End Role="COMPONENTES" EntitySet="COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_COMPONENTES_TIPO_COMPONENTE" Association="epn_InventarioEquiposModel.Store.FK_COMPONENTES_TIPO_COMPONENTE">
+            <End Role="TIPO_COMPONENTE" EntitySet="TIPO_COMPONENTE" />
+            <End Role="COMPONENTES" EntitySet="COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPO_ESTADO_EQUIPO1" Association="epn_InventarioEquiposModel.Store.FK_EQUIPO_ESTADO_EQUIPO1">
+            <End Role="ESTADO_EQUIPO" EntitySet="ESTADO_EQUIPO" />
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPO_PROVEEDOR" Association="epn_InventarioEquiposModel.Store.FK_EQUIPO_PROVEEDOR">
+            <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPO_TIPO_EQUIPO" Association="epn_InventarioEquiposModel.Store.FK_EQUIPO_TIPO_EQUIPO">
+            <End Role="TIPO_EQUIPO" EntitySet="TIPO_EQUIPO" />
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_EQUIPO" Association="epn_InventarioEquiposModel.Store.FK_MANTENIMIENTO_EQUIPO">
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES" Association="epn_InventarioEquiposModel.Store.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES">
+            <End Role="COMPONENTES" EntitySet="COMPONENTES" />
+            <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" EntitySet="MANTENIMIENTO_REEMPLAZO_COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO" Association="epn_InventarioEquiposModel.Store.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO">
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+            <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" EntitySet="MANTENIMIENTO_REEMPLAZO_COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_TECNICO" Association="epn_InventarioEquiposModel.Store.FK_MANTENIMIENTO_TECNICO">
+            <End Role="TECNICO" EntitySet="TECNICO" />
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_TIPO_MANTENIMIENTO" Association="epn_InventarioEquiposModel.Store.FK_MANTENIMIENTO_TIPO_MANTENIMIENTO">
+            <End Role="TIPO_MANTENIMIENTO" EntitySet="TIPO_MANTENIMIENTO" />
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="PROVEEDOR">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="nchar" Nullable="false" MaxLength="25" />
+          <Property Name="apellido" Type="nchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="ESTADO_EQUIPO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="nchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="MANTENIMIENTO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="idTipoMantenimiento" Type="int" Nullable="false" />
+          <Property Name="idEquipo" Type="int" Nullable="false" />
+          <Property Name="idTecnico" Type="int" Nullable="false" />
+          <Property Name="fechaMantenimiento" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+          <Key>
+            <PropertyRef Name="idMantenimiento" />
+          </Key>
+          <Property Name="idMantenimiento" Type="int" Nullable="false" />
+          <Property Name="idComponenteReemplazado" Type="int" Nullable="false" />
+          <Property Name="observaciones" Type="nchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TECNICO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="nchar" Nullable="false" MaxLength="25" />
+          <Property Name="apellido" Type="nchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="TIPO_MANTENIMIENTO">
+          <Key>
+            <PropertyRef Name="int" />
+          </Key>
+          <Property Name="int" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="nchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="ASIGNACION">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="idEquipo" Type="int" Nullable="false" />
+          <Property Name="idResponsable" Type="int" Nullable="false" />
+          <Property Name="fechAsignacion" Type="date" Nullable="false" />
+          <Property Name="activo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="COMPONENTES">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="idEquipo" Type="int" Nullable="false" />
+          <Property Name="idTipoComponente" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EQUIPO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="idEstado" Type="int" Nullable="false" />
+          <Property Name="idProveedor" Type="int" Nullable="false" />
+          <Property Name="idTipoEquipo" Type="int" Nullable="false" />
+          <Property Name="marca" Type="nchar" Nullable="false" MaxLength="25" />
+          <Property Name="modelo" Type="nchar" Nullable="false" MaxLength="25" />
+          <Property Name="fechaCompra" Type="date" Nullable="false" />
+          <Property Name="valorCompra" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RESPONSABLE">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="nchar" Nullable="false" MaxLength="25" />
+          <Property Name="apellido" Type="nchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="TIPO_COMPONENTE">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="nchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="TIPO_EQUIPO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="nchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+        <Association Name="FK_ASIGNACION_EQUIPO">
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.Store.EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ASIGNACION" Type="epn_InventarioEquiposModel.Store.ASIGNACION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ASIGNACION">
+              <PropertyRef Name="idEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ASIGNACION_RESPONSABLE">
+          <End Role="RESPONSABLE" Type="epn_InventarioEquiposModel.Store.RESPONSABLE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ASIGNACION" Type="epn_InventarioEquiposModel.Store.ASIGNACION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESPONSABLE">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ASIGNACION">
+              <PropertyRef Name="idResponsable" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_COMPONENTES_EQUIPO">
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.Store.EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="COMPONENTES" Type="epn_InventarioEquiposModel.Store.COMPONENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="COMPONENTES">
+              <PropertyRef Name="idEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_COMPONENTES_TIPO_COMPONENTE">
+          <End Role="TIPO_COMPONENTE" Type="epn_InventarioEquiposModel.Store.TIPO_COMPONENTE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="COMPONENTES" Type="epn_InventarioEquiposModel.Store.COMPONENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_COMPONENTE">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="COMPONENTES">
+              <PropertyRef Name="idTipoComponente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPO_ESTADO_EQUIPO1">
+          <End Role="ESTADO_EQUIPO" Type="epn_InventarioEquiposModel.Store.ESTADO_EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.Store.EQUIPO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ESTADO_EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="EQUIPO">
+              <PropertyRef Name="idEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPO_PROVEEDOR">
+          <End Role="PROVEEDOR" Type="epn_InventarioEquiposModel.Store.PROVEEDOR" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.Store.EQUIPO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PROVEEDOR">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="EQUIPO">
+              <PropertyRef Name="idProveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPO_TIPO_EQUIPO">
+          <End Role="TIPO_EQUIPO" Type="epn_InventarioEquiposModel.Store.TIPO_EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.Store.EQUIPO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="EQUIPO">
+              <PropertyRef Name="idTipoEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_EQUIPO">
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.Store.EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.Store.MANTENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO">
+              <PropertyRef Name="idEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES">
+          <End Role="COMPONENTES" Type="epn_InventarioEquiposModel.Store.COMPONENTES" Multiplicity="1" />
+          <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" Type="epn_InventarioEquiposModel.Store.MANTENIMIENTO_REEMPLAZO_COMPONENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="COMPONENTES">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+              <PropertyRef Name="idComponenteReemplazado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO">
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.Store.MANTENIMIENTO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" Type="epn_InventarioEquiposModel.Store.MANTENIMIENTO_REEMPLAZO_COMPONENTES" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="MANTENIMIENTO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+              <PropertyRef Name="idMantenimiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_TECNICO">
+          <End Role="TECNICO" Type="epn_InventarioEquiposModel.Store.TECNICO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.Store.MANTENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TECNICO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO">
+              <PropertyRef Name="idTecnico" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_TIPO_MANTENIMIENTO">
+          <End Role="TIPO_MANTENIMIENTO" Type="epn_InventarioEquiposModel.Store.TIPO_MANTENIMIENTO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.Store.MANTENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_MANTENIMIENTO">
+              <PropertyRef Name="int" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO">
+              <PropertyRef Name="idTipoMantenimiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="epn_InventarioEquiposModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="csEpnInventario" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PROVEEDOR" EntityType="epn_InventarioEquiposModel.PROVEEDOR" />
+          <EntitySet Name="ESTADO_EQUIPO" EntityType="epn_InventarioEquiposModel.ESTADO_EQUIPO" />
+          <EntitySet Name="MANTENIMIENTO" EntityType="epn_InventarioEquiposModel.MANTENIMIENTO" />
+          <EntitySet Name="MANTENIMIENTO_REEMPLAZO_COMPONENTES" EntityType="epn_InventarioEquiposModel.MANTENIMIENTO_REEMPLAZO_COMPONENTES" />
+          <EntitySet Name="TECNICO" EntityType="epn_InventarioEquiposModel.TECNICO" />
+          <EntitySet Name="TIPO_MANTENIMIENTO" EntityType="epn_InventarioEquiposModel.TIPO_MANTENIMIENTO" />
+          <EntitySet Name="ASIGNACION" EntityType="epn_InventarioEquiposModel.ASIGNACION" />
+          <EntitySet Name="COMPONENTES" EntityType="epn_InventarioEquiposModel.COMPONENTES" />
+          <EntitySet Name="EQUIPO" EntityType="epn_InventarioEquiposModel.EQUIPO" />
+          <EntitySet Name="RESPONSABLE" EntityType="epn_InventarioEquiposModel.RESPONSABLE" />
+          <EntitySet Name="TIPO_COMPONENTE" EntityType="epn_InventarioEquiposModel.TIPO_COMPONENTE" />
+          <EntitySet Name="TIPO_EQUIPO" EntityType="epn_InventarioEquiposModel.TIPO_EQUIPO" />
+          <AssociationSet Name="FK_EQUIPO_PROVEEDOR" Association="epn_InventarioEquiposModel.FK_EQUIPO_PROVEEDOR">
+            <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPO_ESTADO_EQUIPO1" Association="epn_InventarioEquiposModel.FK_EQUIPO_ESTADO_EQUIPO1">
+            <End Role="ESTADO_EQUIPO" EntitySet="ESTADO_EQUIPO" />
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_EQUIPO" Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_EQUIPO">
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO" Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO">
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+            <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" EntitySet="MANTENIMIENTO_REEMPLAZO_COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_TECNICO" Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TECNICO">
+            <End Role="TECNICO" EntitySet="TECNICO" />
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_TIPO_MANTENIMIENTO" Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TIPO_MANTENIMIENTO">
+            <End Role="TIPO_MANTENIMIENTO" EntitySet="TIPO_MANTENIMIENTO" />
+            <End Role="MANTENIMIENTO" EntitySet="MANTENIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES" Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES">
+            <End Role="COMPONENTES" EntitySet="COMPONENTES" />
+            <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" EntitySet="MANTENIMIENTO_REEMPLAZO_COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ASIGNACION_EQUIPO" Association="epn_InventarioEquiposModel.FK_ASIGNACION_EQUIPO">
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+            <End Role="ASIGNACION" EntitySet="ASIGNACION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ASIGNACION_RESPONSABLE" Association="epn_InventarioEquiposModel.FK_ASIGNACION_RESPONSABLE">
+            <End Role="RESPONSABLE" EntitySet="RESPONSABLE" />
+            <End Role="ASIGNACION" EntitySet="ASIGNACION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_COMPONENTES_EQUIPO" Association="epn_InventarioEquiposModel.FK_COMPONENTES_EQUIPO">
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+            <End Role="COMPONENTES" EntitySet="COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_COMPONENTES_TIPO_COMPONENTE" Association="epn_InventarioEquiposModel.FK_COMPONENTES_TIPO_COMPONENTE">
+            <End Role="TIPO_COMPONENTE" EntitySet="TIPO_COMPONENTE" />
+            <End Role="COMPONENTES" EntitySet="COMPONENTES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPO_TIPO_EQUIPO" Association="epn_InventarioEquiposModel.FK_EQUIPO_TIPO_EQUIPO">
+            <End Role="TIPO_EQUIPO" EntitySet="TIPO_EQUIPO" />
+            <End Role="EQUIPO" EntitySet="EQUIPO" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="PROVEEDOR">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <Property Name="apellido" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="EQUIPO" Relationship="epn_InventarioEquiposModel.FK_EQUIPO_PROVEEDOR" FromRole="PROVEEDOR" ToRole="EQUIPO" />
+        </EntityType>
+        <EntityType Name="ESTADO_EQUIPO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="EQUIPO" Relationship="epn_InventarioEquiposModel.FK_EQUIPO_ESTADO_EQUIPO1" FromRole="ESTADO_EQUIPO" ToRole="EQUIPO" />
+        </EntityType>
+        <EntityType Name="MANTENIMIENTO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idTipoMantenimiento" Type="Int32" Nullable="false" />
+          <Property Name="idEquipo" Type="Int32" Nullable="false" />
+          <Property Name="idTecnico" Type="Int32" Nullable="false" />
+          <Property Name="fechaMantenimiento" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="EQUIPO" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_EQUIPO" FromRole="MANTENIMIENTO" ToRole="EQUIPO" />
+          <NavigationProperty Name="MANTENIMIENTO_REEMPLAZO_COMPONENTES" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO" FromRole="MANTENIMIENTO" ToRole="MANTENIMIENTO_REEMPLAZO_COMPONENTES" />
+          <NavigationProperty Name="TECNICO" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TECNICO" FromRole="MANTENIMIENTO" ToRole="TECNICO" />
+          <NavigationProperty Name="TIPO_MANTENIMIENTO" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TIPO_MANTENIMIENTO" FromRole="MANTENIMIENTO" ToRole="TIPO_MANTENIMIENTO" />
+        </EntityType>
+        <EntityType Name="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+          <Key>
+            <PropertyRef Name="idMantenimiento" />
+          </Key>
+          <Property Name="idMantenimiento" Type="Int32" Nullable="false" />
+          <Property Name="idComponenteReemplazado" Type="Int32" Nullable="false" />
+          <Property Name="observaciones" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="MANTENIMIENTO" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO" FromRole="MANTENIMIENTO_REEMPLAZO_COMPONENTES" ToRole="MANTENIMIENTO" />
+          <NavigationProperty Name="COMPONENTES" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES" FromRole="MANTENIMIENTO_REEMPLAZO_COMPONENTES" ToRole="COMPONENTES" />
+        </EntityType>
+        <EntityType Name="TECNICO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <Property Name="apellido" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="MANTENIMIENTO" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TECNICO" FromRole="TECNICO" ToRole="MANTENIMIENTO" />
+        </EntityType>
+        <EntityType Name="TIPO_MANTENIMIENTO">
+          <Key>
+            <PropertyRef Name="int" />
+          </Key>
+          <Property Name="int" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="MANTENIMIENTO" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TIPO_MANTENIMIENTO" FromRole="TIPO_MANTENIMIENTO" ToRole="MANTENIMIENTO" />
+        </EntityType>
+        <EntityType Name="ASIGNACION">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idEquipo" Type="Int32" Nullable="false" />
+          <Property Name="idResponsable" Type="Int32" Nullable="false" />
+          <Property Name="fechAsignacion" Type="DateTime" Nullable="false" />
+          <Property Name="activo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="EQUIPO" Relationship="epn_InventarioEquiposModel.FK_ASIGNACION_EQUIPO" FromRole="ASIGNACION" ToRole="EQUIPO" />
+          <NavigationProperty Name="RESPONSABLE" Relationship="epn_InventarioEquiposModel.FK_ASIGNACION_RESPONSABLE" FromRole="ASIGNACION" ToRole="RESPONSABLE" />
+        </EntityType>
+        <EntityType Name="COMPONENTES">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idEquipo" Type="Int32" Nullable="false" />
+          <Property Name="idTipoComponente" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MANTENIMIENTO_REEMPLAZO_COMPONENTES" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES" FromRole="COMPONENTES" ToRole="MANTENIMIENTO_REEMPLAZO_COMPONENTES" />
+          <NavigationProperty Name="EQUIPO" Relationship="epn_InventarioEquiposModel.FK_COMPONENTES_EQUIPO" FromRole="COMPONENTES" ToRole="EQUIPO" />
+          <NavigationProperty Name="TIPO_COMPONENTE" Relationship="epn_InventarioEquiposModel.FK_COMPONENTES_TIPO_COMPONENTE" FromRole="COMPONENTES" ToRole="TIPO_COMPONENTE" />
+        </EntityType>
+        <EntityType Name="EQUIPO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idEstado" Type="Int32" Nullable="false" />
+          <Property Name="idProveedor" Type="Int32" Nullable="false" />
+          <Property Name="idTipoEquipo" Type="Int32" Nullable="false" />
+          <Property Name="marca" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <Property Name="modelo" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <Property Name="fechaCompra" Type="DateTime" Nullable="false" />
+          <Property Name="valorCompra" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <NavigationProperty Name="PROVEEDOR" Relationship="epn_InventarioEquiposModel.FK_EQUIPO_PROVEEDOR" FromRole="EQUIPO" ToRole="PROVEEDOR" />
+          <NavigationProperty Name="ESTADO_EQUIPO" Relationship="epn_InventarioEquiposModel.FK_EQUIPO_ESTADO_EQUIPO1" FromRole="EQUIPO" ToRole="ESTADO_EQUIPO" />
+          <NavigationProperty Name="MANTENIMIENTO" Relationship="epn_InventarioEquiposModel.FK_MANTENIMIENTO_EQUIPO" FromRole="EQUIPO" ToRole="MANTENIMIENTO" />
+          <NavigationProperty Name="ASIGNACION" Relationship="epn_InventarioEquiposModel.FK_ASIGNACION_EQUIPO" FromRole="EQUIPO" ToRole="ASIGNACION" />
+          <NavigationProperty Name="COMPONENTES" Relationship="epn_InventarioEquiposModel.FK_COMPONENTES_EQUIPO" FromRole="EQUIPO" ToRole="COMPONENTES" />
+          <NavigationProperty Name="TIPO_EQUIPO" Relationship="epn_InventarioEquiposModel.FK_EQUIPO_TIPO_EQUIPO" FromRole="EQUIPO" ToRole="TIPO_EQUIPO" />
+        </EntityType>
+        <EntityType Name="RESPONSABLE">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <Property Name="apellido" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="ASIGNACION" Relationship="epn_InventarioEquiposModel.FK_ASIGNACION_RESPONSABLE" FromRole="RESPONSABLE" ToRole="ASIGNACION" />
+        </EntityType>
+        <EntityType Name="TIPO_COMPONENTE">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="COMPONENTES" Relationship="epn_InventarioEquiposModel.FK_COMPONENTES_TIPO_COMPONENTE" FromRole="TIPO_COMPONENTE" ToRole="COMPONENTES" />
+        </EntityType>
+        <EntityType Name="TIPO_EQUIPO">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="EQUIPO" Relationship="epn_InventarioEquiposModel.FK_EQUIPO_TIPO_EQUIPO" FromRole="TIPO_EQUIPO" ToRole="EQUIPO" />
+        </EntityType>
+        <Association Name="FK_EQUIPO_PROVEEDOR">
+          <End Role="PROVEEDOR" Type="epn_InventarioEquiposModel.PROVEEDOR" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.EQUIPO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PROVEEDOR">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="EQUIPO">
+              <PropertyRef Name="idProveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPO_ESTADO_EQUIPO1">
+          <End Role="ESTADO_EQUIPO" Type="epn_InventarioEquiposModel.ESTADO_EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.EQUIPO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ESTADO_EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="EQUIPO">
+              <PropertyRef Name="idEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_EQUIPO">
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.MANTENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO">
+              <PropertyRef Name="idEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO">
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.MANTENIMIENTO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" Type="epn_InventarioEquiposModel.MANTENIMIENTO_REEMPLAZO_COMPONENTES" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="MANTENIMIENTO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+              <PropertyRef Name="idMantenimiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_TECNICO">
+          <End Role="TECNICO" Type="epn_InventarioEquiposModel.TECNICO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.MANTENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TECNICO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO">
+              <PropertyRef Name="idTecnico" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_TIPO_MANTENIMIENTO">
+          <End Role="TIPO_MANTENIMIENTO" Type="epn_InventarioEquiposModel.TIPO_MANTENIMIENTO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MANTENIMIENTO" Type="epn_InventarioEquiposModel.MANTENIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_MANTENIMIENTO">
+              <PropertyRef Name="int" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO">
+              <PropertyRef Name="idTipoMantenimiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES">
+          <End Role="COMPONENTES" Type="epn_InventarioEquiposModel.COMPONENTES" Multiplicity="1" />
+          <End Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES" Type="epn_InventarioEquiposModel.MANTENIMIENTO_REEMPLAZO_COMPONENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="COMPONENTES">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+              <PropertyRef Name="idComponenteReemplazado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ASIGNACION_EQUIPO">
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ASIGNACION" Type="epn_InventarioEquiposModel.ASIGNACION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ASIGNACION">
+              <PropertyRef Name="idEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ASIGNACION_RESPONSABLE">
+          <End Role="RESPONSABLE" Type="epn_InventarioEquiposModel.RESPONSABLE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ASIGNACION" Type="epn_InventarioEquiposModel.ASIGNACION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RESPONSABLE">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ASIGNACION">
+              <PropertyRef Name="idResponsable" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_COMPONENTES_EQUIPO">
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="COMPONENTES" Type="epn_InventarioEquiposModel.COMPONENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="COMPONENTES">
+              <PropertyRef Name="idEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_COMPONENTES_TIPO_COMPONENTE">
+          <End Role="TIPO_COMPONENTE" Type="epn_InventarioEquiposModel.TIPO_COMPONENTE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="COMPONENTES" Type="epn_InventarioEquiposModel.COMPONENTES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_COMPONENTE">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="COMPONENTES">
+              <PropertyRef Name="idTipoComponente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPO_TIPO_EQUIPO">
+          <End Role="TIPO_EQUIPO" Type="epn_InventarioEquiposModel.TIPO_EQUIPO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EQUIPO" Type="epn_InventarioEquiposModel.EQUIPO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TIPO_EQUIPO">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="EQUIPO">
+              <PropertyRef Name="idTipoEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="epn_InventarioEquiposModelStoreContainer" CdmEntityContainer="csEpnInventario">
+          <EntitySetMapping Name="PROVEEDOR">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.PROVEEDOR">
+              <MappingFragment StoreEntitySet="PROVEEDOR">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ESTADO_EQUIPO">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.ESTADO_EQUIPO">
+              <MappingFragment StoreEntitySet="ESTADO_EQUIPO">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MANTENIMIENTO">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.MANTENIMIENTO">
+              <MappingFragment StoreEntitySet="MANTENIMIENTO">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idTipoMantenimiento" ColumnName="idTipoMantenimiento" />
+                <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+                <ScalarProperty Name="idTecnico" ColumnName="idTecnico" />
+                <ScalarProperty Name="fechaMantenimiento" ColumnName="fechaMantenimiento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+              <MappingFragment StoreEntitySet="MANTENIMIENTO_REEMPLAZO_COMPONENTES">
+                <ScalarProperty Name="idMantenimiento" ColumnName="idMantenimiento" />
+                <ScalarProperty Name="idComponenteReemplazado" ColumnName="idComponenteReemplazado" />
+                <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TECNICO">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.TECNICO">
+              <MappingFragment StoreEntitySet="TECNICO">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPO_MANTENIMIENTO">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.TIPO_MANTENIMIENTO">
+              <MappingFragment StoreEntitySet="TIPO_MANTENIMIENTO">
+                <ScalarProperty Name="int" ColumnName="int" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ASIGNACION">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.ASIGNACION">
+              <MappingFragment StoreEntitySet="ASIGNACION">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+                <ScalarProperty Name="idResponsable" ColumnName="idResponsable" />
+                <ScalarProperty Name="fechAsignacion" ColumnName="fechAsignacion" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="COMPONENTES">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.COMPONENTES">
+              <MappingFragment StoreEntitySet="COMPONENTES">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+                <ScalarProperty Name="idTipoComponente" ColumnName="idTipoComponente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EQUIPO">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.EQUIPO">
+              <MappingFragment StoreEntitySet="EQUIPO">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+                <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+                <ScalarProperty Name="idTipoEquipo" ColumnName="idTipoEquipo" />
+                <ScalarProperty Name="marca" ColumnName="marca" />
+                <ScalarProperty Name="modelo" ColumnName="modelo" />
+                <ScalarProperty Name="fechaCompra" ColumnName="fechaCompra" />
+                <ScalarProperty Name="valorCompra" ColumnName="valorCompra" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RESPONSABLE">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.RESPONSABLE">
+              <MappingFragment StoreEntitySet="RESPONSABLE">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPO_COMPONENTE">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.TIPO_COMPONENTE">
+              <MappingFragment StoreEntitySet="TIPO_COMPONENTE">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPO_EQUIPO">
+            <EntityTypeMapping TypeName="epn_InventarioEquiposModel.TIPO_EQUIPO">
+              <MappingFragment StoreEntitySet="TIPO_EQUIPO">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="epn_inventarios" ZoomLevel="59">
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.PROVEEDOR" Width="1.5" PointX="0.75" PointY="4.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.ESTADO_EQUIPO" Width="1.5" PointX="0.5" PointY="1.25" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.MANTENIMIENTO" Width="1.5" PointX="5.25" PointY="4.5" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.MANTENIMIENTO_REEMPLAZO_COMPONENTES" Width="1.5" PointX="10.5" PointY="3.5" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.TECNICO" Width="1.5" PointX="3" PointY="1.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.TIPO_MANTENIMIENTO" Width="1.5" PointX="5.375" PointY="8.125" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.ASIGNACION" Width="1.5" PointX="8.25" PointY="4.625" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.COMPONENTES" Width="1.5" PointX="8.25" PointY="1.75" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.EQUIPO" Width="1.5" PointX="3" PointY="4" Height="3.7109993489583317" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.RESPONSABLE" Width="1.5" PointX="10.625" PointY="5.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.TIPO_COMPONENTE" Width="1.5" PointX="6" PointY="2" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="epn_InventarioEquiposModel.TIPO_EQUIPO" Width="1.5" PointX="0.75" PointY="7.625" Height="1.5956835937500031" IsExpanded="true" />
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_EQUIPO_PROVEEDOR" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="5.7689925130208337" />
+          <ConnectorPoint PointX="3" PointY="5.7689925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_EQUIPO_ESTADO_EQUIPO1" ManuallyRouted="false">
+          <ConnectorPoint PointX="0.59375" PointY="2.8456835937499996" />
+          <ConnectorPoint PointX="0.59375" PointY="7.1439925130208337" />
+          <ConnectorPoint PointX="3" PointY="7.1439925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_EQUIPO" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="5.87474609375" />
+          <ConnectorPoint PointX="5.25" PointY="5.87474609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_MANTENIMIENTO" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="4.53125" />
+          <ConnectorPoint PointX="10.5" PointY="4.53125" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TECNICO" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="1.90625" />
+          <ConnectorPoint PointX="5.59375" PointY="1.90625" />
+          <ConnectorPoint PointX="5.59375" PointY="4.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_TIPO_MANTENIMIENTO" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.0625" PointY="8.125" />
+          <ConnectorPoint PointX="6.0625" PointY="7.2494921875" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_MANTENIMIENTO_REEMPLAZO_COMPONENTES_COMPONENTES" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="3.7112939453125" />
+          <ConnectorPoint PointX="10.5" PointY="3.7112939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_ASIGNACION_EQUIPO" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="7.5114957682291656" />
+          <ConnectorPoint PointX="5.979166666666667" PointY="7.5114957682291648" />
+          <ConnectorPoint PointX="6.145833333333333" PointY="7.5114957682291656" />
+          <ConnectorPoint PointX="9" PointY="7.5114957682291656" />
+          <ConnectorPoint PointX="9" PointY="6.9898893229166674" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_ASIGNACION_RESPONSABLE" ManuallyRouted="false">
+          <ConnectorPoint PointX="10.625" PointY="6.4324446614583337" />
+          <ConnectorPoint PointX="9.75" PointY="6.4324446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_COMPONENTES_EQUIPO" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="4.9061210468749987" />
+          <ConnectorPoint PointX="5" PointY="4.9061210468749987" />
+          <ConnectorPoint PointX="5" PointY="4.25" />
+          <ConnectorPoint PointX="5.510416666666667" PointY="4.2499999999999991" />
+          <ConnectorPoint PointX="5.677083333333333" PointY="4.25" />
+          <ConnectorPoint PointX="9" PointY="4.25" />
+          <ConnectorPoint PointX="9" PointY="3.9225878906249996" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_COMPONENTES_TIPO_COMPONENTE" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="2.35564697265625" />
+          <ConnectorPoint PointX="8.25" PointY="2.35564697265625" />
+        </AssociationConnector>
+        <AssociationConnector Association="epn_InventarioEquiposModel.FK_EQUIPO_TIPO_EQUIPO" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.4658419713541679" />
+          <ConnectorPoint PointX="3.75" PointY="8.4658419713541679" />
+          <ConnectorPoint PointX="3.75" PointY="7.7109993489583317" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

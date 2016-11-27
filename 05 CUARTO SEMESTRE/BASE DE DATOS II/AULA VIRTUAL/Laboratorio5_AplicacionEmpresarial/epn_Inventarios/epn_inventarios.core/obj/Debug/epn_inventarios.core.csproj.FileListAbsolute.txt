@@ -1,0 +1,15 @@
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll.config
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.pdb
+C:\epn_inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll.config
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll.config
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.pdb

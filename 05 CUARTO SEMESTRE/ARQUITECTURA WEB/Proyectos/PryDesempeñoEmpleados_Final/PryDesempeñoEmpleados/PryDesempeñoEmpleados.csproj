@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16016394-7EBF-4434-8D71-2511C99B6E8F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PryDesempeñoEmpleados</RootNamespace>
+    <AssemblyName>PryDesempeñoEmpleados</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\Actividades.aspx" />
+    <Content Include="Presentacion\Images\actualizar.png" />
+    <Content Include="Presentacion\Administrador.aspx" />
+    <Content Include="Presentacion\Cargo.aspx" />
+    <Content Include="Presentacion\EmpleadosNota.aspx" />
+    <Content Include="Presentacion\EnlazarEmpleados.aspx" />
+    <Content Include="Presentacion\Estilos\Estilos_Css.css" />
+    <Content Include="Presentacion\Estilos\Galeria.css" />
+    <Content Include="Presentacion\Galeria\1.jpg" />
+    <Content Include="Presentacion\Galeria\5.jpg" />
+    <Content Include="Presentacion\Galeria\3.jpg" />
+    <Content Include="Presentacion\Galeria\4.jpg" />
+    <Content Include="Presentacion\Galeria\2.jpg" />
+    <Content Include="Presentacion\imagen.aspx" />
+    <Content Include="Presentacion\Images\Admi.png" />
+    <Content Include="Presentacion\Images\arrow.gif" />
+    <Content Include="Presentacion\Images\banner-img.jpg" />
+    <Content Include="Presentacion\Images\Boton\actualizar.png" />
+    <Content Include="Presentacion\Images\Boton\admin.png" />
+    <Content Include="Presentacion\Images\Boton\baja.png" />
+    <Content Include="Presentacion\Images\Boton\conectar.png" />
+    <Content Include="Presentacion\Images\Boton\emp-jefe.png" />
+    <Content Include="Presentacion\Images\Boton\guardar.png" />
+    <Content Include="Presentacion\Images\Boton\ingresar.png" />
+    <Content Include="Presentacion\Images\Boton\recempleado.png" />
+    <Content Include="Presentacion\Images\Boton\regactividad.png" />
+    <Content Include="Presentacion\Images\Boton\regcargos.png" />
+    <Content Include="Presentacion\Images\Boton\regresar.png" />
+    <Content Include="Presentacion\Images\Boton\regsitio.png" />
+    <Content Include="Presentacion\Images\Boton\regunidad.png" />
+    <Content Include="Presentacion\Images\Boton\salir.png" />
+    <Content Include="Presentacion\Images\btn-banner-h.gif" />
+    <Content Include="Presentacion\Images\btn-banner.gif" />
+    <Content Include="Presentacion\Images\btn-more-h.gif" />
+    <Content Include="Presentacion\Images\btn-more-n.gif" />
+    <Content Include="Presentacion\Images\btn-submit-h.gif" />
+    <Content Include="Presentacion\Images\btn-submit.gif" />
+    <Content Include="Presentacion\Images\epnlogo.png" />
+    <Content Include="Presentacion\Images\icon-aol.gif" />
+    <Content Include="Presentacion\Images\icon-aol1.gif" />
+    <Content Include="Presentacion\Images\icon-aol2.gif" />
+    <Content Include="Presentacion\Images\icon-arrow-left.gif" />
+    <Content Include="Presentacion\Images\icon-arrow-right.gif" />
+    <Content Include="Presentacion\Images\icon-facebook.gif" />
+    <Content Include="Presentacion\Images\icon-fb.gif" />
+    <Content Include="Presentacion\Images\icon-linkde.gif" />
+    <Content Include="Presentacion\Images\icon-linkedin.gif" />
+    <Content Include="Presentacion\Images\icon-twit.gif" />
+    <Content Include="Presentacion\Images\icon-twitter.gif" />
+    <Content Include="Presentacion\Images\img-1.jpg" />
+    <Content Include="Presentacion\Images\img-cir-h.gif" />
+    <Content Include="Presentacion\Images\img-cir-n.gif" />
+    <Content Include="Presentacion\Images\menu-h.gif" />
+    <Content Include="Presentacion\Images\menu.gif" />
+    <Content Include="Presentacion\Images\news-letter-bg-1.gif" />
+    <Content Include="Presentacion\Images\news-letter-bg-2.gif" />
+    <Content Include="Presentacion\Images\panel-bg.gif" />
+    <Content Include="Presentacion\Images\panel-bottom.gif" />
+    <Content Include="Presentacion\Images\panel-icon-1.gif" />
+    <Content Include="Presentacion\Images\panel-icon-2.gif" />
+    <Content Include="Presentacion\Images\panel-icon-3.gif" />
+    <Content Include="Presentacion\Images\panel-top.gif" />
+    <Content Include="Presentacion\Images\regresar.png" />
+    <Content Include="Presentacion\Images\slider-bg.gif" />
+    <Content Include="Presentacion\Images\testimonilas-bg.gif" />
+    <Content Include="Presentacion\Images\top-strip.gif" />
+    <Content Include="Presentacion\Inicio.aspx" />
+    <Content Include="Presentacion\Perfiles.aspx" />
+    <Content Include="Presentacion\RegistroEmpleados.aspx" />
+    <Content Include="Presentacion\Sesion.aspx" />
+    <Content Include="Presentacion\Sitio.aspx" />
+    <Content Include="Presentacion\Unidad.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comun\Cm_ClsActividad.cs" />
+    <Compile Include="Comun\Cm_ClsCargo.cs" />
+    <Compile Include="Comun\Cm_ClsEmpleado.cs" />
+    <Compile Include="Comun\Cm_ClsEmpleadoJefe.cs" />
+    <Compile Include="Comun\Cm_ClsSitio.cs" />
+    <Compile Include="Comun\Cm_ClsUnidad.cs" />
+    <Compile Include="Datos\Dt_ClsActividad.cs" />
+    <Compile Include="Datos\Dt_ClsCargo.cs" />
+    <Compile Include="Datos\Dt_ClsEmpleado.cs" />
+    <Compile Include="Datos\Dt_ClsEmpleadoJefe.cs" />
+    <Compile Include="Datos\Dt_ClsSitio.cs" />
+    <Compile Include="Datos\Dt_ClsUnidad.cs" />
+    <Compile Include="Negocio\Ng_ClsActividad.cs" />
+    <Compile Include="Negocio\Ng_ClsCargo.cs" />
+    <Compile Include="Negocio\Ng_ClsEmpleado.cs" />
+    <Compile Include="Negocio\Ng_ClsEmpleadoJefe.cs" />
+    <Compile Include="Negocio\Ng_ClsSitio.cs" />
+    <Compile Include="Negocio\Ng_ClsUnidad.cs" />
+    <Compile Include="Presentacion\Actividades.aspx.cs">
+      <DependentUpon>Actividades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Actividades.aspx.designer.cs">
+      <DependentUpon>Actividades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Cargo.aspx.cs">
+      <DependentUpon>Cargo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Cargo.aspx.designer.cs">
+      <DependentUpon>Cargo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\EmpleadosNota.aspx.cs">
+      <DependentUpon>EmpleadosNota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\EmpleadosNota.aspx.designer.cs">
+      <DependentUpon>EmpleadosNota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\EnlazarEmpleados.aspx.cs">
+      <DependentUpon>EnlazarEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\EnlazarEmpleados.aspx.designer.cs">
+      <DependentUpon>EnlazarEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\imagen.aspx.cs">
+      <DependentUpon>imagen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\imagen.aspx.designer.cs">
+      <DependentUpon>imagen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PaginaPrincipal.Master.cs">
+      <DependentUpon>PaginaPrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PaginaPrincipal.Master.designer.cs">
+      <DependentUpon>PaginaPrincipal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Perfiles.aspx.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Perfiles.aspx.designer.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\RegistroEmpleados.aspx.cs">
+      <DependentUpon>RegistroEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\RegistroEmpleados.aspx.designer.cs">
+      <DependentUpon>RegistroEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Sesion.aspx.cs">
+      <DependentUpon>Sesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Sesion.aspx.designer.cs">
+      <DependentUpon>Sesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Sitio.aspx.cs">
+      <DependentUpon>Sitio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Sitio.aspx.designer.cs">
+      <DependentUpon>Sitio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Unidad.aspx.cs">
+      <DependentUpon>Unidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Unidad.aspx.designer.cs">
+      <DependentUpon>Unidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentacion\PaginaPrincipal.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Presentacion\Guiones\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51731</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

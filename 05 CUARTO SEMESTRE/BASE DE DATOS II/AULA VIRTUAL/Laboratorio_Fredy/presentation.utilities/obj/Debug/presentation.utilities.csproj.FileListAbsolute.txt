@@ -1,0 +1,38 @@
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\presentation.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\presentation.utilities.pdb
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\sgdp.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\sgdp.utilities.pdb
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\Newtonsoft.Json.xml
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.pdb
+E:\proyectos\presentation.utilities\bin\Debug\presentation.utilities.dll
+E:\proyectos\presentation.utilities\bin\Debug\presentation.utilities.pdb
+E:\proyectos\presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+E:\proyectos\presentation.utilities\bin\Debug\utilities.dll
+E:\proyectos\presentation.utilities\bin\Debug\utilities.pdb
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.dll
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\12\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\12\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\12\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\12\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Desktop\Diseño Empresarial\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Desktop\Diseño Empresarial\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Desktop\Diseño Empresarial\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Desktop\Diseño Empresarial\presentation.utilities\obj\Debug\presentation.utilities.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\presentation.utilities\bin\Debug\presentation.utilities.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\presentation.utilities\bin\Debug\presentation.utilities.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\presentation.utilities\obj\Debug\presentation.utilities.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\presentation.utilities\obj\Debug\presentation.utilities.pdb

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<APP>
+	<CONFIGURACAO>
+    <Configuracoes>
+      <dirLogico Valor="C:\DOCUME~1\Ritinha\CONFIG~1\Temp\Rar$EX00.437\"/>
+      <dirConceitual Valor="C:\DOCUME~1\Ritinha\CONFIG~1\Temp\Rar$EX00.437\"/>
+      <showLHint Valor="False"/>
+      <Tempo Valor="3"/>
+      <ExibirLog Valor="False"/>
+    </Configuracoes>
+    <Arquivos>
+      <Arq01 Valor="C:\DOCUMENTS AND SETTINGS\RITINHA\DESKTOP\LEANDRO.XML"/>
+      <Arq02 Valor=""/>
+      <Arq03 Valor=""/>
+      <Arq04 Valor=""/>
+      <Arq05 Valor=""/>
+    </Arquivos>
+  </CONFIGURACAO>
+</APP>

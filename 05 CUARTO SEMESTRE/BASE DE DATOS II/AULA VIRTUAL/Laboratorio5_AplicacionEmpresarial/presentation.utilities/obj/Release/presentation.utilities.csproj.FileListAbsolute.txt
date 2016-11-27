@@ -1,0 +1,8 @@
+E:\proyectos\presentation.utilities\bin\Release\presentation.utilities.dll
+E:\proyectos\presentation.utilities\bin\Release\presentation.utilities.pdb
+E:\proyectos\presentation.utilities\bin\Release\Newtonsoft.Json.dll
+E:\proyectos\presentation.utilities\bin\Release\utilities.dll
+E:\proyectos\presentation.utilities\bin\Release\utilities.pdb
+E:\proyectos\presentation.utilities\obj\Release\presentation.utilities.csprojResolveAssemblyReference.cache
+E:\proyectos\presentation.utilities\obj\Release\presentation.utilities.dll
+E:\proyectos\presentation.utilities\obj\Release\presentation.utilities.pdb

@@ -1,0 +1,44 @@
+
+installation steps:
+
+-----------------------------------------------------------------
+
+1) Download files mentioned above. Unistall any existing versions of network visualisor.
+2) Install Network visualisor 5.
+2) DO NOT overwrite the files in the bin directory with the cracked versions yet.
+3) Open network visualisor, make sure your PC is NOT connected to the internet. Click "install licesne" type in any random characters for the license key then click OK. The program will shortly return an error message.
+4) OK the error message and then close network visualisor, overwrite the files in the bin directory of network visualisor wth the cracked versions. Restart network visualisor, click remove license then click cancel. That it should now work OK.
+
+N\B : if u still have problems ... there is another bin folder that exists in zip folder ..
+
+-replase bin in routersim folder with the new unzipped folder (BIN)
+-repatch crack  tow times
+-may u need 2 change the patch;s first letter 2 Capital(scpw32.dll)
+        Enjoy networking
+
+
+
+-----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

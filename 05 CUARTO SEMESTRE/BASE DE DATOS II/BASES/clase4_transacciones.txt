@@ -1,0 +1,54 @@
+ACID
+Atomicidad.- todo debe estar bien estructurado para q se pueda ejecutar
+Coherencia o consistencia es controlada por el programador
+Aislamiento.- una transaccion q se ejecuta entre varias transacciones simultaneamente
+cada transaccion debe dar los mismos resultados q si se ejcutara sola. A cada transacccion 
+trabaja como si estuviera trabajando sola
+DUrabilidad.- las modificaciones realizada en la transaccion permanecen en el
+tiempo luego de q una transaccion se termina.
+
+OPERACIONES LEER(X) y ESCRIBIR(X)
+
+La informacion siempre se almacena en disco y esta organizada(almacenada) en bloques.
+Cada bloq tiene un tamaño entre (2 kb y 32 kb) dependiendo de la base de datos
+	En Oracle, MYSQL.. es configurable
+	En SQL  Server es fijo(tamaño de bloq=8kb)
+Es múltiplo de una pagina del sistema operativo
+El bloque es la unidad de transferencia entre el disco y la memoria ram
+El buffer es un espacio de memoria ram a donde llegan los bloqs q son leidos desde
+el disco.
+Una transaccion tiene siempre su memoria de programa(memoria RAM asignada), en esta se alma
+cena datos temporables, todos los programas q necesita sql
+Operacion de lectura.- tiene 2 fases
+1. se traslada todo el bloq q contiene x al buffer de datos para esto llevamos una copia 
+al buffer de datos
+2. se debe trasaladar unicamente el valor de la memoria T1 para q se convierta en una variable
+local y solo ahi sera manipulable en el programa.
+
+Que pasa con esta transaccion si se la modifica?
+T1= deposito de 50 dolares en la cuenta X
+	leer (X)
+	X=X+50
+	escribir(X)
+Atomicidad(Gestor de Transacciones).- o se realizan todas las instrucciones correctas o no se realiza
+ninguna.
+ 	leer (X)
+	X=X+50
+	escribir(X) |NO| seguira con el mismo valor
+Deshacer todo lo q ha hecho T1(rollback(T1))
+
+Coherencia(Programador).- q no se guarde correctamente el valor x culpa unicamente del programador
+Aislamiento(GESTOR DE CONCURRENCIA).- la transaccion T1 Y T2 deben obtener los mismos resultados q si se ejecutan
+en conjunto o solas.(GESTOR DE CONCURRENCIA maneja el AISLAMIENTO)
+	T2: cambiar un cheq de 1020 dolares
+	leer(x)
+	---------> Es x>= 1020?(|NO| Print 'No has suficiente saldo')
+	|SI|
+	x=x-1020
+	escribir(X)
+Durabilidad(Subsistema de recuperacion).- luego de q una transaccion se ejecuta los cambios realizados por esa transaccion
+permanecen en el tiempo.(PROGRAMACION PERSISTENTE.- todos los datos permanecen en el tiempo)
+TRANSACCIONES.- Programas persistente xq trabajan con el disco. Todas las transacciones 
+tienen q conservar el ACID.
+Sistema concurrente.- sistema q se ejecutan varias transacciones al mismo tiempo, trabajan con los datos
+al mismo tiempo.

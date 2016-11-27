@@ -1,0 +1,18 @@
+C:\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.dll
+C:\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.pdb
+C:\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.dll
+C:\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.csprojResolveAssemblyReference.cache
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.message\bin\Debug\epn.inventarios.message.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.csprojResolveAssemblyReference.cache
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.message\obj\Debug\epn.inventarios.message.pdb

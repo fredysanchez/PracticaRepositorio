@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="epninventarioEquiposModelStoreContainer" CdmEntityContainer="csEpnInventario">
+    <EntitySetMapping Name="PROVEEDOR">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.PROVEEDOR">
+        <MappingFragment StoreEntitySet="PROVEEDOR">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADO_EQUIPO">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.ESTADO_EQUIPO">
+        <MappingFragment StoreEntitySet="ESTADO_EQUIPO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MANTENIMIENTO">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.MANTENIMIENTO">
+        <MappingFragment StoreEntitySet="MANTENIMIENTO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idTipoMantenimiento" ColumnName="idTipoMantenimiento" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="idTecnico" ColumnName="idTecnico" />
+          <ScalarProperty Name="fechaMantenimiento" ColumnName="fechaMantenimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MANTENIMIENTO_REEPLAZO_COMPONENTES">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.MANTENIMIENTO_REEPLAZO_COMPONENTES">
+        <MappingFragment StoreEntitySet="MANTENIMIENTO_REEPLAZO_COMPONENTES">
+          <ScalarProperty Name="idMantenimiento" ColumnName="idMantenimiento" />
+          <ScalarProperty Name="idComponenteReemplazado" ColumnName="idComponenteReemplazado" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TECNICO">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.TECNICO">
+        <MappingFragment StoreEntitySet="TECNICO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_MANTENIMIENTO">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.TIPO_MANTENIMIENTO">
+        <MappingFragment StoreEntitySet="TIPO_MANTENIMIENTO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASIGNACION">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.ASIGNACION">
+        <MappingFragment StoreEntitySet="ASIGNACION">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="idResponsable" ColumnName="idResponsable" />
+          <ScalarProperty Name="fechaAsignacion" ColumnName="fechaAsignacion" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMPONENTES">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.COMPONENTES">
+        <MappingFragment StoreEntitySet="COMPONENTES">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idEquipo" ColumnName="idEquipo" />
+          <ScalarProperty Name="idTipoComponente" ColumnName="idTipoComponente" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EQUIPO">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.EQUIPO">
+        <MappingFragment StoreEntitySet="EQUIPO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="idTipoEquipo" ColumnName="idTipoEquipo" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="fechaCompra" ColumnName="fechaCompra" />
+          <ScalarProperty Name="valorCompra" ColumnName="valorCompra" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESPONSABLE">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.RESPONSABLE">
+        <MappingFragment StoreEntitySet="RESPONSABLE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_COMPONENTE">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.TIPO_COMPONENTE">
+        <MappingFragment StoreEntitySet="TIPO_COMPONENTE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idTipoEquipo" ColumnName="idTipoEquipo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_EQUIPO">
+      <EntityTypeMapping TypeName="epn.inventarioEquiposModel.TIPO_EQUIPO">
+        <MappingFragment StoreEntitySet="TIPO_EQUIPO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

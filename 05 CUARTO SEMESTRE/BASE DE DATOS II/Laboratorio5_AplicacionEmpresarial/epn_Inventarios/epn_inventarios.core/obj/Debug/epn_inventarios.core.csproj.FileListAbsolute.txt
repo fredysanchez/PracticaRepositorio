@@ -1,0 +1,11 @@
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll.config
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.pdb
+C:\epn_inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll.config
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.csprojResolveAssemblyReference.cache

@@ -1,0 +1,37 @@
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\presentation.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\presentation.utilities.pdb
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\sgdp.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\sgdp.utilities.pdb
+E:\sgdp\sgdp.presentation.utilities\bin\Debug\Newtonsoft.Json.xml
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.dll
+E:\sgdp\sgdp.presentation.utilities\obj\Debug\presentation.utilities.pdb
+E:\proyectos\presentation.utilities\bin\Debug\presentation.utilities.dll
+E:\proyectos\presentation.utilities\bin\Debug\presentation.utilities.pdb
+E:\proyectos\presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+E:\proyectos\presentation.utilities\bin\Debug\utilities.dll
+E:\proyectos\presentation.utilities\bin\Debug\utilities.pdb
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.dll
+E:\proyectos\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\libs\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\libs\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\libs\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\libs\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\libs\presentation.utilities\bin\Debug\presentation.utilities.dll.CodeAnalysisLog.xml
+C:\libs\presentation.utilities\bin\Debug\presentation.utilities.dll.lastcodeanalysissucceeded
+C:\libs\presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\libs\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\libs\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\libs\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\libs\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\obj\Debug\presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\obj\Debug\presentation.utilities.csprojResolveAssemblyReference.cache
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\obj\Debug\presentation.utilities.dll
+C:\Users\TU FACIL CREDITO\Desktop\BaseDatosII\Proyecto\libs\presentation.utilities\obj\Debug\presentation.utilities.pdb

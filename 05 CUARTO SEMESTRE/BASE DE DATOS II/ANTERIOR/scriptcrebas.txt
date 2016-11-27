@@ -1,0 +1,184 @@
+/*==============================================================*/
+/* DBMS name:      ORACLE Version 9i                            */
+/* Created on:     21/09/2011 9:45:22                           */
+/*==============================================================*/
+
+
+drop table TCAFDC cascade constraints;
+
+drop table TCAFVH cascade constraints;
+
+drop table TGAFRL cascade constraints;
+
+drop table VVAFCL cascade constraints;
+
+drop table XCAFDC cascade constraints;
+
+/*==============================================================*/
+/* Table: TCAFDC                                                */
+/*==============================================================*/
+create table TCAFDC  (
+   DCUSR                VARCHAR2(10),
+   DCFEC                NUMBER(8,0),
+   DCDIS                NVARCHAR2(10),
+   DCPRF                VARCHAR2(4),
+   DCSTS                VARCHAR2(1),
+   DCMOD                VARCHAR2(3)                     not null,
+   DCVES                VARCHAR2(7),
+   DCTIP                VARCHAR2(1)                     not null,
+   DCSEQ                NUMBER(5,0)                     not null,
+   DCOBB                VARCHAR2(7)                     not null,
+   DCLOT                NUMBER(3,0),
+   DCCOL                VARCHAR2(3),
+   DCTIMO               VARCHAR2(10),
+   DCMOT                VARCHAR2(10),
+   DCCHA                VARCHAR2(17),
+   DCLLA                VARCHAR2(10),
+   DCNOV                VARCHAR2(1),
+   DCCLI                VARCHAR2(7),
+   DCVRS                VARCHAR2(1),
+   DCANO                VARCHAR2(2),
+   DCDES                VARCHAR2(60),
+   DCICO                VARCHAR2(10),
+   DCIDC                VARCHAR2(15)
+);
+
+/*==============================================================*/
+/* Table: TCAFVH                                                */
+/*==============================================================*/
+create table TCAFVH  (
+   XXTIME               NUMBER(12,0),
+   XXUSR                VARCHAR2(10),
+   VHTIP1               VARCHAR2(2),
+   VHCOD1               VARCHAR2(15),
+   VHICO                VARCHAR2(10),
+   VHLOT                NUMBER(3,0),
+   VHTIP4               VARCHAR2(2),
+   VHCOD4               VARCHAR2(15),
+   VHTOT                VARCHAR2(2),
+   VHNOT                VARCHAR2(7),
+   VHTOC                VARCHAR2(2),
+   VHNOC                VARCHAR2(7),
+   VHOBB                VARCHAR2(7)                     not null,
+   VHCOL                VARCHAR2(3),
+   VHVES                VARCHAR2(7),
+   VHMOT                VARCHAR2(10),
+   VHCHA                VARCHAR2(17),
+   VHLLA                VARCHAR2(10),
+   VHSTS                VARCHAR2(1),
+   VHDATA               NUMBER(12,0),
+   VHUSRA               VARCHAR2(10),
+   VHDATB               NUMBER(12,0),
+   VHUSRB               VARCHAR2(10),
+   VHDATC               NUMBER(12,0),
+   VHUSRC               VARCHAR2(10),
+   VHDATD               NUMBER(12,0),
+   VHUSRD               VARCHAR2(10),
+   VHDATE               NUMBER(12,0),
+   VHUSRE               VARCHAR2(10),
+   VHDATF               NUMBER(12,0),
+   VHUSRF               VARCHAR2(10),
+   VHDATG               NUMBER(12,0),
+   VHUSRG               VARCHAR2(10),
+   VHDATH               NUMBER(12,0),
+   VHUSRH               VARCHAR2(10),
+   VHDATI               NUMBER(12,0),
+   VHUSRI               VARCHAR2(10),
+   VHDATJ               NUMBER(12,0),
+   VHUSRJ               VARCHAR2(10),
+   VHDATK               NUMBER(12,0),
+   VHUSRK               VARCHAR2(10),
+   VHDATL               NUMBER(12,0),
+   VHUSRL               VARCHAR2(10),
+   VHNOV                VARCHAR2(1),
+   VHBOD                VARCHAR2(8),
+   VHTPD                VARCHAR2(2),
+   VHNPD                VARCHAR2(7),
+   VHTNE                VARCHAR2(2),
+   VHNNE                VARCHAR2(7),
+   VHCLI                VARCHAR2(7),
+   VHTFC                VARCHAR2(2),
+   VHNFC                VARCHAR2(7),
+   VHNOM                VARCHAR2(15),
+   VHIDC                VARCHAR2(15),
+   VHUSOS               VARCHAR2(10),
+   VHPRF                VARCHAR2(4),
+   VHMOD                VARCHAR2(3)                     not null,
+   VHVRS                VARCHAR2(1),
+   VHANO                VARCHAR2(2),
+   VHTIMO               VARCHAR2(10),
+   VHDIR                VARCHAR2(30),
+   VHFIL                VARCHAR2(10)
+);
+
+/*==============================================================*/
+/* Table: TGAFRL                                                */
+/*==============================================================*/
+create table TGAFRL  (
+   XXTIME               NUMBER(12,0),
+   XXUSR                VARCHAR2(10),
+   RLPRF                VARCHAR2(4),
+   RLSTS                VARCHAR2(1),
+   RLTIP                VARCHAR2(2)                     not null,
+   RLCOD                VARCHAR2(15)                    not null,
+   RLMOD                VARCHAR2(3),
+   RLVRS                VARCHAR2(1),
+   RLANO                VARCHAR2(2),
+   RLCLA                VARCHAR2(1),
+   RLMRC                VARCHAR2(1),
+   RLCOM                VARCHAR2(1),
+   RLCAP                VARCHAR2(2),
+   RLCM3                VARCHAR2(1),
+   RLPEB                VARCHAR2(7),
+   RLEJD                VARCHAR2(7),
+   RLEJP                VARCHAR2(7)
+);
+
+/*==============================================================*/
+/* Table: VVAFCL                                                */
+/*==============================================================*/
+create table VVAFCL  (
+   XXTIME               NUMBER(12,0),
+   XXUSR                VARCHAR2(10),
+   CLSTS                VARCHAR2(1),
+   CLPRF                VARCHAR2(4),
+   CLCOD                VARCHAR2(7)                     not null,
+   CLNOML               VARCHAR2(40),
+   CLNOMC               VARCHAR2(15),
+   CLDIR1               VARCHAR2(35),
+   CLDIR2               VARCHAR2(35),
+   CLCOM                VARCHAR2(1),
+   CLCLI                VARCHAR2(1),
+   CLZON                VARCHAR2(2),
+   CLTLF                VARCHAR2(8),
+   CLTLX                VARCHAR2(8),
+   CLFAX                VARCHAR2(8),
+   CLCAS                VARCHAR2(10),
+   CLRUC                VARCHAR2(13),
+   CLITM                VARCHAR2(1),
+   CLDCT                NUMBER(5,2),
+   CLVSIA               NUMBER(15,2),
+   CLVDRA               NUMBER(15,2),
+   CLVCRA               NUMBER(15,2),
+   CLVSIM               NUMBER(15,2),
+   CLVDRM               NUMBER(15,2),
+   CLVCRM               NUMBER(15,2),
+   CLVSID               NUMBER(15,2),
+   CLVDRD               NUMBER(15,2),
+   CLVCRD               NUMBER(15,2),
+   CLVSF                NUMBER(15,2),
+   CLCTA                VARCHAR2(15)
+);
+
+/*==============================================================*/
+/* Table: XCAFDC                                                */
+/*==============================================================*/
+create table XCAFDC  (
+   DCSTS                VARCHAR2(1),
+   DCPRF                VARCHAR2(4),
+   DCCOD                VARCHAR2(7)                     not null,
+   DCNOM                VARCHAR2(40),
+   DCNC                 VARCHAR2(15),
+   DCREF                VARCHAR2(40)
+);
+

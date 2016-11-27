@@ -1,0 +1,14 @@
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Proyecto\Proyecto\bin\Proyecto.dll
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Proyecto\Proyecto\bin\Proyecto.pdb
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+c:\users\tu facil credito\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+F:\Proyecto\Proyecto\bin\Proyecto.dll
+F:\Proyecto\Proyecto\bin\Proyecto.pdb
+F:\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+F:\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+F:\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+E:\ \ARQUITECTURA WEB\Proyectos\PryFinal\Proyecto\Proyecto\bin\Proyecto.dll
+E:\ \ARQUITECTURA WEB\Proyectos\PryFinal\Proyecto\Proyecto\bin\Proyecto.pdb
+E:\ \ARQUITECTURA WEB\Proyectos\PryFinal\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+E:\ \ARQUITECTURA WEB\Proyectos\PryFinal\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+E:\ \ARQUITECTURA WEB\Proyectos\PryFinal\Proyecto\Proyecto\obj\Debug\Proyecto.pdb

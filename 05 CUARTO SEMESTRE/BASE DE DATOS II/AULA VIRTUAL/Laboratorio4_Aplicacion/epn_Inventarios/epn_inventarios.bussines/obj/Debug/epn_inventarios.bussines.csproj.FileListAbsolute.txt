@@ -1,0 +1,14 @@
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.dll
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.pdb
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.pdb
+C:\epn_inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.csprojResolveAssemblyReference.cache
+C:\epn_inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.dll
+C:\epn_inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.pdb
+F:\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.dll
+F:\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.bussines.pdb
+F:\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.dll
+F:\epn_Inventarios\epn_inventarios.bussines\bin\Debug\epn_inventarios.core.pdb
+F:\epn_Inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.csprojResolveAssemblyReference.cache
+F:\epn_Inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.dll
+F:\epn_Inventarios\epn_inventarios.bussines\obj\Debug\epn_inventarios.bussines.pdb

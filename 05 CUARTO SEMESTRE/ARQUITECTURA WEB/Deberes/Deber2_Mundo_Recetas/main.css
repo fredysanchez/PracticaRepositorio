@@ -1,0 +1,154 @@
+html, body, h1, h2, h3, p, ol, ul, li, a{
+    margin:0;
+    border:0;
+    padding:0;
+            }
+
+body {
+    padding: 20px 20px 20px 20px;
+    background-position: center;
+    background-repeat:repeat;
+}
+
+p {
+    text-decoration:none;
+    color: slategray;
+    font-size: 20px;
+}
+  
+
+
+ul {
+    padding: 0 0 0 50px;
+}
+
+ol {
+    padding: 0 0 0 50px;
+    font-size: 20px;
+}
+
+
+ul li{
+    display:inline;
+    font-size: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+} 
+a: hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+ol li:first-child {
+    color: red;
+}
+
+
+
+h1{
+    font-size:40px;
+    color:white;
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+    
+ h2 {
+   
+     text-align: center;
+     font-size: 30px;
+     color:#04B4AE;
+     padding:6px 3px 0 0;
+     border-bottom: 3px solid #CCCCCC;
+     margin: 10px 0 20px 0;
+}
+         
+h3 {
+     font-size: 20px;
+     color:#04B4AE;
+     padding-bottom: 3px;
+     margin: 15px 0 15px 0;
+     border-bottom: 1px solid #CCCCCC;
+     margin: 15px 0 15px 0;
+}
+
+.nav{
+     padding-left:0;
+}
+
+.nav a {
+    color: #0000af;
+    text-decoration: none;
+}
+
+.nav li {
+    display:block;0
+}      
+
+
+
+.header {
+    padding:10px 10px 10px 10px;
+    background-color: #b56663;
+    text-align:center;
+    color:white;
+}
+            
+ .header  a{ 
+     color: #ffffff; 
+}
+
+
+.main-content { 
+    padding: 20px 20px 20px 20px; 
+    border: 1px solid #dddddd;
+    margin: 30px auto 0 auto;
+    width: 500px;
+}
+
+
+
+
+
+
+
+.recipes {
+    list-style-type:none; 
+    padding: 0;
+}
+
+
+.recipes li {
+    border: 1px solid #b56663; 
+    padding-left: 15px;
+}
+.recipes h3 { 
+    border-bottom: 0;
+} 
+.recipes a{
+    color: #7facaa;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

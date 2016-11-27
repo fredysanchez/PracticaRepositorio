@@ -1,0 +1,8 @@
+C:\epn_inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.dll
+C:\epn_inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.pdb
+C:\epn_inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.dll
+C:\epn_inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\bin\Debug\epn_inventarios.messaje.pdb
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.dll
+C:\Users\TU FACIL CREDITO\Documents\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.messaje\obj\Debug\epn_inventarios.messaje.pdb

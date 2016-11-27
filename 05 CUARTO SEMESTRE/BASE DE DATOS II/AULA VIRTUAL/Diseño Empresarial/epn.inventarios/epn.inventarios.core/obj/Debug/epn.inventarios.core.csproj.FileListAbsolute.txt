@@ -1,0 +1,15 @@
+C:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+C:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+C:\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+C:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+C:\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+C:\Users\AdminPC\Dropbox\epn\clases\BaseDatosII\Proyecto\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb
+C:\Users\TU FACIL CREDITO\Desktop\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll.config
+C:\Users\TU FACIL CREDITO\Desktop\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.dll
+C:\Users\TU FACIL CREDITO\Desktop\epn.inventarios\epn.inventarios.core\bin\Debug\epn.inventarios.core.pdb
+C:\Users\TU FACIL CREDITO\Desktop\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.dll
+C:\Users\TU FACIL CREDITO\Desktop\epn.inventarios\epn.inventarios.core\obj\Debug\epn.inventarios.core.pdb

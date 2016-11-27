@@ -1,0 +1,16 @@
+C:\epn_inventarios\epn_inventarios.presentation\bin\Debug\epn_inventarios.presentation.exe
+C:\epn_inventarios\epn_inventarios.presentation\bin\Debug\epn_inventarios.presentation.pdb
+C:\epn_inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.Form1.resources
+C:\epn_inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.Properties.Resources.resources
+C:\epn_inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.csproj.GenerateResource.Cache
+C:\epn_inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.exe
+C:\epn_inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.pdb
+F:\epn_Inventarios\epn_inventarios.presentation\bin\Debug\epn_inventarios.presentation.exe
+F:\epn_Inventarios\epn_inventarios.presentation\bin\Debug\epn_inventarios.presentation.pdb
+F:\epn_Inventarios\epn_inventarios.presentation\bin\Debug\epn_inventarios.messaje.dll
+F:\epn_Inventarios\epn_inventarios.presentation\bin\Debug\epn_inventarios.messaje.pdb
+F:\epn_Inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.FrmRegistro.resources
+F:\epn_Inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.Properties.Resources.resources
+F:\epn_Inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.csproj.GenerateResource.Cache
+F:\epn_Inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.exe
+F:\epn_Inventarios\epn_inventarios.presentation\obj\x86\Debug\epn_inventarios.presentation.pdb

@@ -1,0 +1,5 @@
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll.config
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.core\bin\Debug\epn_inventarios.core.pdb
+C:\epn_inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.dll
+C:\epn_inventarios\epn_inventarios.core\obj\Debug\epn_inventarios.core.pdb

@@ -1,0 +1,33 @@
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.services.dll
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.services.pdb
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.bussines.dll
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.messaje.dll
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.core.dll
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.bussines.pdb
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.messaje.pdb
+C:\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.core.pdb
+C:\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.csprojResolveAssemblyReference.cache
+C:\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.dll
+C:\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.services.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.services.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.bussines.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.messaje.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.core.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.bussines.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.messaje.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.core.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.csprojResolveAssemblyReference.cache
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.services.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.services.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.bussines.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.messaje.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.core.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.bussines.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.messaje.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\bin\epn_inventarios.core.pdb
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.csprojResolveAssemblyReference.cache
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.dll
+D:\05 CUARTO SEMESTRE\BASE DE DATOS II\AULA VIRTUAL\Laboratorio5_AplicacionEmpresarial\epn_Inventarios\epn_inventarios.services\obj\Debug\epn_inventarios.services.pdb

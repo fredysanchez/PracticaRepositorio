@@ -1,0 +1,51 @@
+C:\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.csprojResolveAssemblyReference.cache
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.pdb
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.dll
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\Newtonsoft.Json.dll
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.pdb
+C:\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.dll
+C:\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.pdb
+C:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll.config
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll.config
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\Luis\Desktop\base de datos\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.pdb
+F:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll.config
+F:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll
+F:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.pdb
+F:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.dll
+F:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.dll
+F:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.pdb
+F:\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.pdb
+F:\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.csprojResolveAssemblyReference.cache
+F:\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.dll
+F:\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll.config
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.pdb
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.csprojResolveAssemblyReference.cache
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.dll
+C:\Users\AdminPC\Desktop\FINAL\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll.config
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.presentation.utilities.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\presentation.utilities.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\bin\Debug\epn.inventarios.message.pdb
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.csprojResolveAssemblyReference.cache
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.dll
+F:\BASE DE DATOS II\AULA VIRTUAL\Laboratorio_Fredy\epn.inventarios\epn.inventarios.presentation.utilities\obj\Debug\epn.inventarios.presentation.utilities.pdb
